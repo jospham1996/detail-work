@@ -4,6 +4,12 @@
   --bg-accent-blue: #2A85FF;
   --bg-accent-purple: #9747FF;
   --bg-accent-sky: #4BC9F0;
+  --bg-accent-orange: #FF6838;
   --violet: #BB80FD;
   --color-text-white: #ffffff;
+  --color-text-neutral-strong: #23262F;
+}
+
+:root {
+  --bg-neutral-300: #B1B5C3;
 }
