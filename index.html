@@ -817,7 +817,7 @@
 
         <p class="competitors-intro">For a thorough analysis, I'll compare 190evisa with three major competitors in the
             eVisa industry:</p>
-            
+
         <div class="competitors-table-wrapper">
             <table class="competitors-table">
                 <thead>
@@ -862,3 +862,63 @@
             </table>
         </div>
     </div>
+    
+<!-- GSAP core -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
+<!-- ScrollTrigger plugin -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".competitors-table tbody tr", {
+    scrollTrigger: {
+      trigger: ".competitors-table",
+      start: "top 80%",
+    },
+    y: 40,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power3.out"
+  });
+</script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".journey-card").forEach((card) => {
+    gsap.from(card, {
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%",
+        toggleActions: "play none none none",
+      },
+      y: 60,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power3.out"
+    });
+  });
+</script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".persona-card").forEach((card) => {
+    gsap.from(card, {
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%",
+        toggleActions: "play none none none",
+      },
+      y: 60,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power3.out"
+    });
+  });
+</script>
+
+</body>
