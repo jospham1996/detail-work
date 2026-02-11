@@ -40,26 +40,26 @@
 }
 
 .persona-card {
-  display: flex;
-  border-radius: 16px;
-  overflow: hidden;
-  background: var(--persona-bg, var(--bg-accent-green));
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--persona-bg, var(--bg-accent-green));
 }
 
 .persona-card--blue {
-  --persona-bg: var(--bg-accent-blue);
+    --persona-bg: var(--bg-accent-blue);
 }
 
 .persona-card--green {
-  --persona-bg: var(--bg-accent-green);
+    --persona-bg: var(--bg-accent-green);
 }
 
 .persona-card--purple {
-  --persona-bg: var(--bg-accent-purple);
+    --persona-bg: var(--bg-accent-purple);
 }
 
 .persona-card--sky {
-  --persona-bg: var(--bg-accent-sky);
+    --persona-bg: var(--bg-accent-sky);
 }
 
 
@@ -105,8 +105,8 @@
 
 /* Persona Sidebar */
 .persona-sidebar {
-    width: 220px;
-    padding: 30px 30px;
+    width: 180px;
+    padding: 30px 0px 30px 30px;
     color: var(--bg-accent-green);
     display: flex;
     flex-direction: column;
@@ -116,9 +116,21 @@
 }
 
 .avatar {
+    width: 104px;
+    height: 104px;
+    border-radius: 100%;
+    background: white;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.competitor-logos {
     width: 48px;
     height: 48px;
-    border-radius: 0%;
+    border-radius: 13px;
     background: white;
     /* margin-bottom: 15px; */
     overflow: hidden;
@@ -325,133 +337,143 @@ body {
 
 
 .competitors-section {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .competitors-header h2 {
-            font-size: 28px;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 8px;
-            padding-bottom: 8px;
-            border-bottom: 4px solid #4285f4;
-            display: inline-block;
-        }
-
-        .competitors-intro {
-            font-size: 14px;
-            color: #555;
-            margin: 0 0 12px 0;
-            line-height: 1.6;
-        }
-
-        .competitors-table-wrapper {
-            background: var(--white);
-            border-radius: 20px;
-            /* padding: 16px; */
-            border: #1a1a1a;
-        }
-
-        .competitors-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            border-radius: 24px;
-            overflow: hidden;
-            border: 1px solid #EEF0F1;
-        }
-
-        .competitors-table thead th {
-            text-align: left;
-            font-size: 14px;
-            font-weight: 600;
-            color: #1a1a1a;
-            padding: 15px 20px;
-            background: transparent;
-            border-bottom: 1px solid #EEF0F1;
-        }
-
-        .competitors-table tbody tr {
-            border-bottom: 1px solid #EEF0F1;
-        }
-
-        .competitors-table tbody tr:last-child {
-            border-bottom: none;
-        }
-
-        .competitors-table tbody td {
-            padding: 16px 20px;
-            vertical-align: middle;
-            border-bottom: 1px solid #EEF0F1;
-        }
-
-        .competitors-table tbody tr:last-child td {
-        border-bottom: none;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-        .competitor-logo {
-            width: 48px;
-            height: 48px;
-            border-radius: 13px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
+.competitors-header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 4px solid #4285f4;
+    display: inline-block;
+}
 
-        .competitor-logo svg {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+.competitors-intro {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 24px 0;
+    line-height: 1.6;
+}
 
-        .competitor-name {
-            font-size: 15px;
-            font-weight: 500;
-            color: #1a1a1a;
-        }
+.competitors-table-wrapper {
+    background: var(--white);
+    border-radius: 20px;
+    /* padding: 16px; */
+    border: #1a1a1a;
+}
 
-        .competitor-desc {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.6;
-        }
+.competitors-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid #EEF0F1;
+}
 
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 10px;
-            }
+.competitors-table thead th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding: 15px 20px;
+    background: var(--bg-neutral-100);
+    border-bottom: 1px solid #EEF0F1;
+    border-right: 1px solid #EEF0F1;
+}
 
-            .competitors-header h2 {
-                font-size: 22px;
-            }
+.competitors-table tbody tr {
+    border-bottom: 1px solid #EEF0F1;
+}
 
-            .competitors-table-wrapper {
-                padding: 15px;
-                overflow-x: auto;
-            }
+.competitors-table tbody tr:last-child {
+    border-bottom: none;
+}
 
-            .competitors-table {
-                min-width: 600px;
-            }
+.competitors-table tbody td {
+    padding: 16px 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid #EEF0F1;
+    border-right: 1px solid #EEF0F1;
+}
 
-            .competitor-logo {
-                width: 40px;
-                height: 40px;
-            }
+.competitors-table tbody tr:last-child td {
+    border-bottom: none;
+}
 
-            .competitors-table tbody td {
-                padding: 15px 10px;
-            }
-        }
+.competitors-table tbody td:last-child {
+    border-right: none;
+}
 
-        @media (max-width: 480px) {
-            .competitors-header h2 {
-                font-size: 20px;
-            }
+.competitors-table thead th:last-child {
+    border-right: none;
+}
 
-            .competitors-intro {
-                font-size: 13px;
-            }
-        }
+.competitor-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.competitor-logo svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.competitor-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.competitor-desc {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .competitors-header h2 {
+        font-size: 22px;
+    }
+
+    .competitors-table-wrapper {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .competitors-table {
+        min-width: 600px;
+    }
+
+    .competitor-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .competitors-table tbody td {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .competitors-header h2 {
+        font-size: 20px;
+    }
+
+    .competitors-intro {
+        font-size: 13px;
+    }
+}
