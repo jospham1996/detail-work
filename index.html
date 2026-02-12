@@ -8,10 +8,55 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="icon.css">
     <title>1.2. User Personas</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 </head>
 
 <body>
     <div class="journey-section">
+        <div class="journey-header">
+            <h2 class="h2-section">1. User Research & Analysis</h2>
+        </div>
+
+        <div class="brand-intro">
+            <div class="brand-container">
+
+                <!-- LEFT -->
+                <div class="brand-visual">
+                    <div class="brand-blob"></div>
+                    <img src="images/190evisa-logo.png" alt="190 Evisa Logo" class="brand-logo">
+                </div>
+
+                <!-- RIGHT -->
+                <div class="brand-content">
+                    <div class="quote-mark">
+                        <img src="images/quote.svg" alt="Quote">
+                    </div>
+
+
+                    <p class="brand-text">
+                        As a UX Designer, my goal in this phase is to understand the user
+                        segments, their behaviors, and needs to create an optimized and
+                        intuitive eVisa application process. Since budget and time constraints
+                        prevent us from conducting direct user surveys and interviews, we will
+                        focus on data-driven research methods to define our user base and
+                        tailor the UX/UI accordingly.
+                    </p>
+
+                    <div class="brand-meta">
+                        <strong>190 Evisa</strong>
+                        <span>www.190evisa.com</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
         <div class="journey-header">
             <h2 class="h2-section">3. User Personas</h2>
         </div>
@@ -814,10 +859,8 @@
         <div class="journey-header">
             <h2 class="h2-section">5. Identifying Key Competitors</h2>
         </div>
-
-        <p class="competitors-intro">For a thorough analysis, I'll compare 190evisa with three major competitors in the
+        <p class="h4-section">For a thorough analysis, I'll compare 190evisa with three major competitors in the
             eVisa industry:</p>
-
         <div class="competitors-table-wrapper">
             <table class="competitors-table">
                 <thead>
@@ -831,7 +874,7 @@
                     <tr>
                         <td>
                             <div class="competitor-logos">
-                                    <img src="images/ivisa.png" alt="Avatar">
+                                <img src="images/ivisa.png" alt="Avatar">
                             </div>
                         </td>
                         <td class="competitor-name">iVisa</td>
@@ -841,7 +884,7 @@
                     <tr>
                         <td>
                             <div class="competitor-logos">
-                                    <img src="images/evisaexpress.png" alt="Avatar">
+                                <img src="images/evisaexpress.png" alt="Avatar">
                             </div>
                         </td>
                         <td class="competitor-name">eVisa Express</td>
@@ -851,7 +894,7 @@
                     <tr>
                         <td>
                             <div class="competitor-logos">
-                                    <img src="images/atly.png" alt="Avatar">
+                                <img src="images/atly.png" alt="Avatar">
                             </div>
                         </td>
                         <td class="competitor-name">Atlys</td>
@@ -861,64 +904,346 @@
                 </tbody>
             </table>
         </div>
+
+        <!-- 6. Competitor Feature Comparison -->
+        <div class="journey-header">
+            <h2 class="h2-section">6. Competitor UX/UI Feature Comparison</h2>
+        </div>
+        <!-- <p class="h4-section">For a thorough analysis, I'll compare 190evisa with three major competitors in the
+            eVisa industry:</p> -->
+        <div class="competitors-table-wrapper">
+            <table class="competitors-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>
+                            <div class="brand-cell">
+                                <img src="images/ivisa.png" alt="eVisa Express logo">
+                                <span>iVisa</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="brand-cell">
+                                <img src="images/evisaexpress.png" alt="eVisa Express logo">
+                                <span>eVisa Express</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="brand-cell">
+                                <img src="images/atly.png" alt="eVisa Express logo">
+                                <span>Atlys</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="competitor-name">Website Clarity & Navigation</td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Get a visa approval in the shortest time possible.</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Overloaded with text, cluttered UI</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Mobile-first, modern UI</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competitor-name">SEO Optimization</td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Strong SEO, top Google results</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Lower ranking, depends on ads</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">High ranking, strong digital presence</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competitor-name">Application Process UX</td>
+                        <td>
+
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Intuitive, guided process</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Forms are lengthy and not user-friendly</div>
+                            </div>
+                        </td>
+                        </td>
+
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Submit relevant documents when applying.</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="competitor-name">Processing Time Display</td>
+                        <td>
+
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Estimated time per country</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Estimated time per country</div>
+                            </div>
+                        </td>
+                        </td>
+
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Predictive AI estimates for approval</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="competitor-name">Pricing Transparency</td>
+                        <td>
+
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Hidden until checkout</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Displayed upfront</div>
+                            </div>
+                        </td>
+                        </td>
+
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Service fees always clear</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="competitor-name">Trust Signals (Badges, Reviews)</td>
+                        <td>
+
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Verified reviews & Trustpilot integrations</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Verified reviews & Trustpilot integrations</div>
+                            </div>
+                        </td>
+                        </td>
+
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">App store reviews & influencer marketing
+                                </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="competitor-name">Support Options</td>
+                        <td>
+
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">24/7 chat, multilingual support</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">24/7 chat, multilingual support</div>
+                            </div>
+                        </td>
+                        </td>
+
+                        <td>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Reports of inconsistent support</div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- strategy-section -->
+        <div class="journey-header">
+            <h2 class="h2-section">7. Opportunities for 190evisa</h2>
+        </div>
+        <div class="strategy-section">
+            <div class="strategy-bg-shape"></div>
+            <img src="images/blob-orange.png" alt="" class="strategy-blob">
+            <div class="strategy-container">
+                <div class="strategy-card">
+                    <h3>Enhance<br>Trust & Transparency</h3>
+                    <ul>
+                        <li>Implement verified user testimonials and Trustpilot integrations like iVisa and Atlys.</li>
+                        <li>Add government partnership seals and compliance badges to reinforce credibility.</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>Enhance<br>Application Process UX</h3>
+                    <ul>
+                        <li>Add step-by-step document upload guidance like Atlys.</li>
+                        <li>Introduce predictive processing estimates like Atlys' AI-powered approval predictions.</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>Expand Support<br>& Communication Channels</h3>
+                    <ul>
+                        <li>Provide real-time chat and automated updates via WhatsApp/SMS to improve response times.
+                        </li>
+                        <li>Introduce customer support AI assistants to handle basic inquiries like Atlys.</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>Improve<br>SEO & User Awareness</h3>
+                    <ul>
+                        <li>Strengthen content on "How to Identify Official eVisa Websites" to attract users confused by
+                            government vs. third-party providers.</li>
+                        <li>Add government partnership seals and compliance badges to reinforce credibility.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    
-<!-- GSAP core -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <div class="site-structure">
+        <div class="structure-container">
+            <div class="journey-header">
+                <h2 class="h2-section">8. Sitemap for 190evisa</h2>
+            </div>
+            <div class="structure-grid">
+                <div class="structure-column">
+                    <div class="structure-title">Visa Information</div>
+                    <ul>
+                        <li>Country List</li>
+                        <li>Customers Reviews & Ratings</li>
+                        <li>Frequently Asked Questions (FAQ)</li>
+                        <li>Evisa News</li>
+                    </ul>
+                </div>
 
-<!-- ScrollTrigger plugin -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+                <div class="structure-column">
+                    <div class="structure-title">Apply for a Visa</div>
+                    <ul>
+                        <li>Select Country & Visa Type</li>
+                        <li>Trip details</li>
+                        <li>Fill Application Form</li>
+                        <li>Upload Documents</li>
+                        <li>Payment & Processing Options</li>
+                        <li>Application Review & Submission</li>
+                    </ul>
+                </div>
 
-<script>
-  gsap.registerPlugin(ScrollTrigger);
+                <div class="structure-column">
+                    <div class="structure-title">User Account</div>
+                    <ul>
+                        <li>Dashboard</li>
+                        <li>Saved Applications</li>
+                        <li>Payment History</li>
+                        <li>Settings & Preferences</li>
+                    </ul>
+                </div>
 
-  gsap.from(".competitors-table tbody tr", {
-    scrollTrigger: {
-      trigger: ".competitors-table",
-      start: "top 80%",
-    },
-    y: 40,
-    opacity: 0,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: "power3.out"
-  });
-</script>
+                <div class="structure-column">
+                    <div class="structure-title">Track Your Application</div>
+                    <ul>
+                        <li>Real-time Visa Status</li>
+                        <li>Estimated Approval Time</li>
+                        <li>Email/SMS Updates</li>
+                    </ul>
+                </div>
 
-<script>
-  gsap.registerPlugin(ScrollTrigger);
+                <div class="structure-column">
+                    <div class="structure-title">Customer Support</div>
+                    <ul>
+                        <li>Live Chat & AI Chatbot</li>
+                        <li>Contact Support (Email/Phone)</li>
+                        <li>Refund Policy & Service Guarantee</li>
+                    </ul>
+                </div>
 
-  gsap.utils.toArray(".journey-card").forEach((card) => {
-    gsap.from(card, {
-      scrollTrigger: {
-        trigger: card,
-        start: "top 85%",
-        toggleActions: "play none none none",
-      },
-      y: 60,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power3.out"
-    });
-  });
-</script>
+                <div class="structure-column">
+                    <div class="structure-title">Blog & Visa Guides</div>
+                    <ul>
+                        <li>Visa Process Explained</li>
+                        <li>Travel Tips & Destination Insights</li>
+                        <li>Updates on Visa Regulations</li>
+                    </ul>
+                </div>
 
-<script>
-  gsap.registerPlugin(ScrollTrigger);
+                <div class="structure-column">
+                    <div class="structure-title">Reviews & Testimonials</div>
+                    <ul>
+                        <li>Trustpilot Integration</li>
+                        <li>User Success Stories</li>
+                    </ul>
+                </div>
 
-  gsap.utils.toArray(".persona-card").forEach((card) => {
-    gsap.from(card, {
-      scrollTrigger: {
-        trigger: card,
-        start: "top 85%",
-        toggleActions: "play none none none",
-      },
-      y: 60,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power3.out"
-    });
-  });
-</script>
+            </div>
+        </div>
 
+    </div>
+
+    <div class="process-flow">
+        <div class="journey-header">
+            <h2 class="h2-section">9. User flow for 190evisa</h2>
+        </div>
+        <div class="flow-container">
+            <img src="images/process-flow.svg" alt="Visa Application Flow" class="flow-svg">
+        </div>
+    </div>
+
+    <!-- Format cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <!-- GSAP core -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="animations.js"></script>
 </body>
