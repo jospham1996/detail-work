@@ -99,7 +99,7 @@
     display: flex;
     align-items: flex-start;
     gap: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -173,6 +173,13 @@ td .list-item {
     text-align: left;
 }
 
+.section-title-card {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    /* margin-bottom: 8px; */
+}
+
 /* Detailed Customer Journey Map Styles */
 .detailed-journey-section {
     margin-top: 60px;
@@ -189,7 +196,7 @@ td .list-item {
 .journey-cards-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 16px;
     margin-bottom: 40px;
 }
 
@@ -257,7 +264,7 @@ td .list-item {
 }
 
 .journey-card-section:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 
@@ -268,16 +275,16 @@ td .list-item {
 }
 
 body {
-    font-family: 'Inter', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Plus Jakarta Sans', Roboto, 'Helvetica Neue', Arial, sans-serif;
     /* padding: 20px; */
     background-color: #fdfdfd;
 }
 
 .personas-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    max-width: 1400px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -616,6 +623,9 @@ body {
 .persona-card {
     transform-style: preserve-3d;
     will-change: transform;
+    display: flex;
+  /* flex-direction: column;
+  min-width: 0; tránh overflow */
 }
 
 .persona-content {
@@ -728,6 +738,7 @@ body {
 
     .site-structure {
         padding: 60px 20px;
+        /* margin-top: 40px; */
     }
 }
 
@@ -763,10 +774,10 @@ body {
 
 /* ===== CUSTOM CURSOR ===== */
 
-body {
+/* body {
     cursor: none;
     /* ẩn cursor mặc định */
-}
+/* } */
 
 .cursor-dot,
 .cursor-outline {
@@ -819,7 +830,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 160px;   /* chỉnh theo ý */
+    gap: 160px;
+    /* chỉnh theo ý */
 }
 
 /* ===== LEFT SIDE ===== */
@@ -864,7 +876,8 @@ body {
 }
 
 .quote-mark img {
-    width: 70px;       /* chỉnh theo ý */
+    width: 70px;
+    /* chỉnh theo ý */
     height: auto;
     opacity: 0.9;
 }
@@ -913,4 +926,259 @@ body {
 .brand-logo {
     will-change: transform;
     transform-origin: center;
+}
+
+
+/* Ẩn Scroll Bar */
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* ── Header ── */
+.cs-label {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #5F6574;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.cs-title {
+    font-size: 76px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.0;
+    text-align: center;
+    color: #0F172A;
+    margin-bottom: 14px;
+}
+
+.cs-subtitle {
+    font-size: 20px;
+    color: #5F6574;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* ── Image ── */
+.hero-image {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    padding-top: 48px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-header {
+    padding-top: 60px;
+    margin-top: 60px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.content-wrapper {
+      padding-top: 56px;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+    }
+
+    /* ── Section ── */
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #111827;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    .section-body {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .section-body p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #374151;
+    }
+
+    .stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1060px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #D1D5DB;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #374151;
+  flex-shrink: 0;
+}
+
+.step-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.connector {
+  flex: 1;
+  height: 1px;
+  margin: 0 12px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #CBD5E1 0px, #CBD5E1 4px,
+    transparent 4px, transparent 10px
+  );
+}
+
+.block-title {
+  width: 100%;
+  background-color: #2563EB;
+  padding: 64px 24px;
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-title h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.img-slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.img-slider .slides-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.img-slider .slider-btn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #D1D5DB;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.img-slider .slider-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: #374151;
+  transition: stroke 0.2s;
+}
+
+.img-slider .slider-btn:hover {
+  background: #111827;
+  border-color: #111827;
+}
+
+.img-slider .slider-btn:hover svg {
+  stroke: #fff;
+}
+
+.img-slider .slides {
+  flex: 1;
+  overflow: hidden;
+}
+
+.img-slider .slide {
+  display: none;
+  width: 100%;
+}
+
+.img-slider .slide.active {
+  display: block;
+}
+
+.img-slider .slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.img-slider .dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.img-slider .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #D1D5DB;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.img-slider .dot.active {
+  background: #111827;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.bullet-content {
+    padding-left: 20px;
+    text-indent: -20px;
 }

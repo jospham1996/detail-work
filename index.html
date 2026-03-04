@@ -7,62 +7,240 @@
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="icon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
     <title>1.2. User Personas</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 </head>
 
 <body>
-    <div class="journey-section">
-        <div class="journey-header">
-            <h2 class="h2-section">1. User Research & Analysis</h2>
+
+    <div class="hero-header">
+        <div>
+            <p class="cs-label">Case Study</p>
+            <h1 class="cs-title">190 Evisa Platform</h1>
+            <p class="cs-subtitle">Online e-visa Application platform</p>
         </div>
 
-        <div class="brand-intro">
-            <div class="brand-container">
+        <div class="hero-image">
+            <img src="images/herobanner.jpg" alt="190 Evisa Platform screenshot" />
+        </div>
+    </div>
 
-                <!-- LEFT -->
-                <div class="brand-visual">
-                    <div class="brand-blob"></div>
-                    <img src="images/190evisa-logo.png" alt="190 Evisa Logo" class="brand-logo">
-                </div>
+    <div class="content-wrapper">
 
-                <!-- RIGHT -->
-                <div class="brand-content">
-                    <div class="quote-mark">
-                        <img src="images/quote.svg" alt="Quote">
-                    </div>
+        <!-- Bối cảnh sản phẩm -->
+        <div class="section">
+            <h2 class="section-title">Bối cảnh sản phẩm</h2>
+            <div class="section-body">
+                <p>190evisa là nền tảng hỗ trợ đăng ký eVisa thông qua bên thứ ba, giúp người dùng nộp hồ sơ visa điện
+                    tử cho nhiều quốc gia khác nhau. Sản phẩm hoạt động theo mô hình thu phí dịch vụ và cung cấp các tùy
+                    chọn thời gian xử lý (tiêu chuẩn, nhanh). Nhóm người dùng chính bao gồm: Khách du lịch cá nhân,
+                    người lần đầu làm visa, người cần visa gấp, doanh nghiệp / HR xử lý hồ sơ số lượng lớn.</p>
+            </div>
+        </div>
+        <!-- Vấn đề -->
+        <div class="section">
+            <h2 class="section-title">Vấn đề</h2>
+            <div class="section-body">
+                <p>Mặc dù nền tảng duy trì lượng truy cập ổn định, tỷ lệ hoàn tất đăng ký eVisa không đạt kỳ vọng kinh
+                    doanh. Điều này ảnh hưởng trực tiếp đến hiệu suất chuyển đổi và doanh thu, đồng thời làm tăng áp lực
+                    cho đội hỗ trợ do người dùng không hoàn tất hồ sơ.
+                    Từ góc độ sản phẩm, cần xác định rõ tại bước nào trong hành trình đăng ký đang xảy ra ma sát và
+                    nguyên nhân cụ thể dẫn đến tình trạng rời bỏ.</p>
+            </div>
+        </div>
+        <!-- Mục tiêu nghiên cứu -->
+        <div class="section">
+            <h2 class="section-title">Mục tiêu nghiên cứu</h2>
+            <div class="section-body">
+                <p>- Tăng tỷ lệ hoàn tất đăng ký (Completion Rate) bằng cách giảm user rời bỏ trong quy trình nộp hồ sơ.
+                </p>
+                <p>- Xác định và loại bỏ các điểm ma sát chính trong việc đăng ký, đặc biệt tại các bước yêu cầu nhập
+                    thông tin và tải tài liệu.</p>
+                <p>- Thu hẹp hiệu suất giữa Mobile và Desktop, đảm bảo trải nghiệm nhất quán trên thiết bị.</p>
+                <p>- Tăng mức độ tin tưởng trước phần thanh toán, cải thiện khả năng chuyển đổi ở bước cuối cùng.</p>
+                <p>- Tối ưu quy trình đăng ký theo hướng đơn giản, rõ ràng và minh bạch hơn, phù hợp với kỳ vọng của
+                    người
+                    dùng quốc tế.</p>
+            </div>
+        </div>
+    </div>
 
+    <!-- <div class="stepper">
 
-                    <p class="brand-text">
-                        As a UX Designer, my goal in this phase is to understand the user
-                        segments, their behaviors, and needs to create an optimized and
-                        intuitive eVisa application process. Since budget and time constraints
-                        prevent us from conducting direct user surveys and interviews, we will
-                        focus on data-driven research methods to define our user base and
-                        tailor the UX/UI accordingly.
-                    </p>
+        <div class="step">
+            <div class="step-num">1</div>
+            <span class="step-label">The Problems</span>
+        </div>
 
-                    <div class="brand-meta">
-                        <strong>190 Evisa</strong>
-                        <span>www.190evisa.com</span>
-                    </div>
-                </div>
+        <div class="connector"></div>
 
+        <div class="step">
+            <div class="step-num">2</div>
+            <span class="step-label">Research & Analysis</span>
+        </div>
+
+        <div class="connector"></div>
+
+        <div class="step">
+            <div class="step-num">3</div>
+            <span class="step-label">Empathize</span>
+        </div>
+
+        <div class="connector"></div>
+
+        <div class="step">
+            <div class="step-num">4</div>
+            <span class="step-label">Strategy & Architecture</span>
+        </div>
+
+        <div class="connector"></div>
+
+        <div class="step">
+            <div class="step-num">5</div>
+            <span class="step-label">The Solution & UI Showcase</span>
+        </div>
+    </div> -->
+
+    <div>
+        <div class="block-title">
+            <h2>Research & Analysis</h2>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+
+        <!-- Bối cảnh sản phẩm -->
+        <div class="section">
+            <div class="section-body">
+                <p><strong>Để tìm hiểu nguyên nhân gốc rễ của vấn đề, tôi triển khai nghiên cứu theo ba hướng
+                        chính:</strong></p>
+                <p>1. Phân tích dữ liệu định lượng (dựa trên dữ liệu từ GA4)</p>
+                <p>2. Đánh giá trải nghiệm hiện tại</p>
+                <p>3. Phân tích và so sánh đối thủ</p>
+            </div>
+        </div>
+        <!-- Phân tích dữ liệu định lượng (GA4 Funnel) -->
+        <div class="section">
+            <h2 class="section-title">1. Phân tích dữ liệu định lượng (GA4 Funnel)</h2>
+            <div class="section-body">
+                <p>Dựa trên phân tích funnel từ GA4 trong 30 ngày gần nhất, cho thấy tỷ lệ rời bỏ tăng mạnh khi người
+                    dùng tiến sâu vào quy trình đăng ký evisa. Mặc dù lượng truy cập ổn định, nhiều người dùng không
+                    hoàn tất hồ sơ - điều này ảnh hưởng trực tiếp đến chỉ số quan trọng nhất của sản phẩm: tỷ lệ hoàn
+                    tất đăng ký (Completion Rate).</p>
+                <p class="bullet-content">
+                    <strong>• Tỷ lệ hoàn tất thấp (36%)</strong><br>
+                    <span>Chỉ 36% người dùng bắt đầu quy trình đi đến bước
+                        thanh toán.
+                        Với khoảng 15.000 người bắt đầu quy trình mỗi tháng, hơn 9.000 người rời bỏ giữa chừng - đồng
+                        nghĩa với việc thất thoát cơ hội chuyển đổi và doanh thu đáng kể.</span>
+                </p>
+                <p class="bullet-content">
+                    <strong>• Tỷ lệ rời bỏ cao tại bước nhập thông tin (30%) và tải lên tài liệu (22%)</strong><br>
+                    <span>Phần lớn người dùng rời khỏi quy trình khi phải nhập nhiều thông tin hoặc tải giấy tờ. Điều
+                        này cho thấy khả năng tồn tại tình trạng quá tải nhận thức (cognitive overload) và thiếu rõ ràng
+                        trong hướng dẫn tài liệu.</span>
+                </p>
+                <p class="bullet-content">
+                    <strong>• Chênh lệch hiệu suất giữa Mobile và Desktop</strong><br>
+                    <span>Người dùng mobile có tỷ lệ tiếp tục thấp hơn desktop. Khoảng cách này phản ánh vấn đề tiềm ẩn
+                        trong tối ưu trải nghiệm trên thiết bị di động, đặc biệt với các biểu mẫu dài và thao tác tải
+                        tài liệu.</span>
+                </p>
+                <p class="bullet-content">
+                    <strong>• Rời bỏ trước thanh toán</strong><br>
+                    <span>Một lượng đáng kể người dùng dừng lại ngay trước bước thanh toán. Đây là tín hiệu cho thấy có
+                        thể tồn tại rào cản về mức độ tin tưởng hoặc sự minh bạch chi phí - cần được xác minh ở bước
+                        nghiên cứu tiếp theo.</span>
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="images/190evisa-ga4-funnel.jpg" alt="190 Evisa ga4 funnel" />
             </div>
         </div>
 
+        <!-- 2. Đánh giá trải nghiệm hiện tại -->
+        <div class="section">
+            <h2 class="section-title">2. Đánh giá trải nghiệm hiện tại</h2>
+            <div class="section-body">
+                <p>Sau khi xác định các điểm rời bỏ trong dữ liệu, tôi tiến hành đánh giá giao diện đăng ký hiện tại để
+                    tìm các yếu tố thiết kế có thể gây ma sát cho người dùng.</p>
+            </div>
+            <div class="img-slider">
+                <div class="slides-wrapper">
 
+                    <button class="slider-btn prev" onclick="slidePrev()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6" />
+                        </svg>
+                    </button>
 
+                    <div class="slides">
+                        <div class="slide active">
+                            <img src="images/190evisa-oldversion-1.jpg" alt="190 Evisa ga4 funnel" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/190evisa-oldversion-2.jpg" alt="190 Evisa ga4 funnel" />
+                        </div>
+                    </div>
 
+                    <button class="slider-btn next" onclick="slideNext()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                    </button>
 
+                </div>
 
-
-        <div class="journey-header">
-            <h2 class="h2-section">3. User Personas</h2>
+                <div class="dots">
+                    <span class="dot active" onclick="goTo(0)"></span>
+                    <span class="dot" onclick="goTo(1)"></span>
+                </div>
+            </div>
+            <div class="section-body">
+                <p class="bullet-content">
+                    <strong>• Hướng dẫn tải ảnh quá dài và khó đọc</strong><br>
+                    <span>Hai khu vực tải ảnh (ảnh chân dung và ảnh hộ chiếu) có bố cục giống nhau nhưng không có ví dụ
+                        rõ ràng hoặc hướng dẫn trực quan. Người dùng có thể nhầm lẫn giữa hai loại tài liệu cần
+                        tải.</span>
+                </p>
+                <p class="bullet-content">
+                    <strong>• Biểu mẫu quá dài trên một màn hình</strong><br>
+                    <span>Nhiều trường thông tin cá nhân được hiển thị cùng lúc (tên, ngày sinh, quốc tịch, email, tôn
+                        giáo, nơi sinh...). Điều này khiến trang trông dài và phức tạp, dễ làm người dùng cảm thấy quá
+                        tải khi bắt đầu nhập dữ liệu.</span>
+                </p>
+                <p class="bullet-content">
+                    <strong>• Một số trường thông tin chưa thực sự cần thiết</strong><br>
+                    <span>Các trường như Religion hoặc Identity Card có thể khiến người dùng bối rối về mục đích của
+                        việc thu thập thông tin, đồng thời làm tăng thời gian hoàn thành biểu mẫu.</span>
+                </p>
+                <p class="bullet-content">
+                    <strong>• Visual hierarchy chưa rõ ràng</strong><br>
+                    <span>Các nhóm thông tin và trường nhập liệu có mức độ nhấn mạnh thị giác gần như giống nhau. Điều
+                        này khiến người dùng khó nhận biết đâu là thông tin quan trọng và đâu là bước cần hoàn thành
+                        trước.</span>
+                </p>
+                <p class="bullet-content">
+                    <strong>• Thiếu tín hiệu hỗ trợ người dùng khi nhập liệu</strong><br>
+                    <span>Form chưa có các yếu tố hỗ trợ như gợi ý định dạng, ví dụ mẫu, hoặc kiểm tra lỗi theo thời
+                        gian thực, khiến người dùng dễ nhập sai và phải sửa lại nhiều lần.</span>
+                </p>
+                <p class="bullet-content">
+                    <strong>• Các nhóm thông tin liên quan chưa được gom lại rõ ràng</strong><br>
+                    <span>Một số dữ liệu về liên hệ cá nhân, địa chỉ và liên hệ khẩn cấp nằm gần nhau nhưng không được
+                        tách biệt rõ về mặt trực quan, khiến biểu mẫu khó đọc khi người dùng cuộn qua nhiều phần.</span>
+                </p>
+            </div>
         </div>
 
         <!-- User Personas -->
         <div class="personas-grid">
+            <h2 class="section-title">User Personas</h2>
             <!-- Persona 1: Anna Nguyen -->
             <div class="persona-card persona-card--green">
                 <div class="persona-sidebar">
@@ -72,52 +250,54 @@
                     <div class="persona-name">Anna Nguyen</div>
                     <div class="persona-info">
                         <div>Marketing Manager</div>
-                        <div>Age: 40</div>
+                        <div>40 tuổi</div>
                         <div class="flag">
-                            <span class="label">Vietnamese</span>
+                            <span class="label">Việt Nam</span>
                         </div>
                     </div>
                 </div>
                 <div class="persona-content">
                     <div class="persona-badge">
                         <span class="icon-diamond"></span>
-                        <span>Individual Travelers</span>
+                        <span>Khách du lịch cá nhân</span>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Context</div>
+                        <div class="section-title-card">Context</div>
                         <div class="section-text">
-                            Anna is a busy professional planning a short vacation to Thailand. She has little experience
-                            with visa applications and wants a fast, hassle-free process without reading complex legal
-                            requirements. She prefers using mobile devices for applications and needs clear guidance.
+                            Anna là một nhân viên văn phòng bận rộn đang lên kế hoạch cho chuyến du lịch ngắn ngày đến
+                            Đài Loan. Cô có ít kinh nghiệm trong việc xin visa và mong muốn một quy trình nhanh chóng,
+                            đơn giản mà không cần phải đọc quá nhiều thông tin pháp lý phức tạp. Anna thường sử dụng
+                            điện thoại di động để đăng ký các dịch vụ trực tuyến và cần hướng dẫn rõ ràng trong từng
+                            bước.
                         </div>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Goal</div>
+                        <div class="section-title-card">Goal</div>
                         <div class="list-item">
                             <div class="icon-check-circle"></div>
-                            <div class="text">Complete the visa application quickly and easily.</div>
+                            <div class="text">Hoàn thành hồ sơ xin visa nhanh chóng và dễ dàng.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-check-circle"></div>
-                            <div class="text">Avoid complicated forms and unclear instructions.</div>
+                            <div class="text">Tránh các biểu mẫu phức tạp hoặc hướng dẫn khó hiểu.</div>
                         </div>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Pain Points</div>
+                        <div class="section-title-card">Pain Points</div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Confused about required documents.</div>
+                            <div class="text">Không chắc chắn về các loại tài liệu cần chuẩn bị.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Frustrated by long and complex forms.</div>
+                            <div class="text">Cảm thấy mệt mỏi với các biểu mẫu dài và phức tạp.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Difficulties in tracking application progress.</div>
+                            <div class="text">Khó theo dõi trạng thái xử lý hồ sơ visa.</div>
                         </div>
                     </div>
                 </div>
@@ -130,54 +310,55 @@
                     </div>
                     <div class="persona-name">David Lee</div>
                     <div class="persona-info">
-                        <div>College Student</div>
-                        <div>Age: 24</div>
+                        <div>Sinh viên đại học</div>
+                        <div>24 tuổi</div>
                         <div class="flag">
-                            <span class="label">Korean</span>
+                            <span class="label">Hàn Quốc</span>
                         </div>
                     </div>
                 </div>
                 <div class="persona-content">
                     <div class="persona-badge">
                         <span class="icon-diamond"></span>
-                        <span>Visa Education</span>
+                        <span>Người lần đầu làm Visa</span>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Context</div>
+                        <div class="section-title-card">Context</div>
                         <div class="section-text">
-                            David is traveling abroad for an exchange program and applying for a visa for the first
-                            time. He is unfamiliar with visa processes and finds the terminology confusing. He is afraid
-                            of making mistakes that could delay or reject his application, and his parents are also
-                            unsure about the requirements.
+                            David chuẩn bị ra nước ngoài để tham gia chương trình trao đổi sinh viên và đang nộp hồ sơ
+                            xin visa lần đầu. Anh chưa quen với quy trình xin visa và cảm thấy các thuật ngữ liên quan
+                            khá khó hiểu. David lo lắng rằng việc điền sai thông tin có thể khiến hồ sơ bị chậm xử lý
+                            hoặc bị từ chối, trong khi bản thân và gia đình cũng không chắc chắn về các yêu cầu cần
+                            chuẩn bị.
                         </div>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Goal</div>
+                        <div class="section-title-card">Goal</div>
                         <div class="list-item">
                             <div class="icon-check-circle"></div>
-                            <div class="text">Receive clear, easy-to-understand instructions.</div>
+                            <div class="text">Nhận được hướng dẫn rõ ràng và dễ hiểu trong quá trình đăng ký visa.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-check-circle"></div>
-                            <div class="text">Ensure his application is correct before submission.</div>
+                            <div class="text">Đảm bảo hồ sơ chính xác trước khi nộp để tránh sai sót.</div>
                         </div>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Pain Points</div>
+                        <div class="section-title-card">Pain Points</div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Overwhelmed by unclear requirements.</div>
+                            <div class="text">Cảm thấy quá tải khi các yêu cầu không được giải thích rõ ràng.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Unsure if his documents meet the criteria.</div>
+                            <div class="text">Không chắc chắn tài liệu đã đáp ứng đúng tiêu chí hay chưa.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Confused by technical visa terms.</div>
+                            <div class="text">Bối rối với các thuật ngữ kỹ thuật trong quy trình xin visa.</div>
                         </div>
                     </div>
                 </div>
@@ -190,53 +371,53 @@
                     </div>
                     <div class="persona-name">Arjun Sharma</div>
                     <div class="persona-info">
-                        <div>Business Owner</div>
-                        <div>Age: 32</div>
+                        <div>Chủ doanh nghiệp</div>
+                        <div>A32 tuổi</div>
                         <div class="flag">
-                            <span class="label">Indian</span>
+                            <span class="label">Ấn Độ</span>
                         </div>
                     </div>
                 </div>
                 <div class="persona-content">
                     <div class="persona-badge">
                         <span class="icon-diamond"></span>
-                        <span>Urgent Visa Applicant</span>
+                        <span>Người cần visa gấp / công tác</span>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Context</div>
+                        <div class="section-title-card">Context</div>
                         <div class="section-text">
-                            Sharma has just been assigned to attend a high-stakes business meeting in Dubai next week.
-                            He needs to get his visa approved as quickly as possible and is willing to pay extra for
-                            expedited processing. He has no time for long forms or unclear processing times.
+                            Arjun vừa được giao tham dự một cuộc họp kinh doanh quan trọng tại Dubai vào tuần tới. Anh
+                            cần xin visa nhanh nhất có thể và sẵn sàng trả thêm phí cho dịch vụ xử lý nhanh. Arjun không
+                            có nhiều thời gian để điền các biểu mẫu dài hoặc tìm hiểu các quy trình phức tạp.
                         </div>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Goal</div>
+                        <div class="section-title-card">Goal</div>
                         <div class="list-item">
                             <div class="icon-check-circle"></div>
-                            <div class="text">Get a visa approval in the shortest time possible.</div>
+                            <div class="text">Nhận được visa trong thời gian ngắn nhất có thể.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-check-circle"></div>
-                            <div class="text">Avoid delays and unnecessary steps.</div>
+                            <div class="text">Tránh các bước không cần thiết và sự chậm trễ trong quy trình.</div>
                         </div>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Pain Points</div>
+                        <div class="section-title-card">Pain Points</div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Unclear visa processing timelines.</div>
+                            <div class="text">Không rõ thời gian xử lý visa cụ thể.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Frustrated by lengthy verification processes.</div>
+                            <div class="text">Cảm thấy khó chịu với quy trình xác minh dài và phức tạp.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Wants a fast-track option but doesn't see one easily.</div>
+                            <div class="text">Muốn có tùy chọn xử lý nhanh (fast-track) nhưng không dễ tìm thấy.</div>
                         </div>
                     </div>
                 </div>
@@ -250,53 +431,53 @@
                     <div class="persona-name">Sarah Wong</div>
                     <div class="persona-info">
                         <div>HR Manager</div>
-                        <div>Age: 40</div>
+                        <div>4o tuổi</div>
                         <div class="flag">
-                            <span class="label">Hong Konger</span>
+                            <span class="label">Hồng Kông</span>
                         </div>
                     </div>
                 </div>
                 <div class="persona-content">
                     <div class="persona-badge">
                         <span class="icon-diamond"></span>
-                        <span>Business Visa Applicant</span>
+                        <span>Người quản lý nhiều hồ sơ visa</span>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Context</div>
+                        <div class="section-title-card">Context</div>
                         <div class="section-text">
-                            Sarah is responsible for handling multiple visa applications for employees attending
-                            conferences abroad. She struggles with managing multiple applications at once and needs an
-                            efficient, streamlined process. She prefers a dashboard to track application statuses and
-                            avoid repetitive data entry.
+                            Sarah chịu trách nhiệm xử lý nhiều hồ sơ xin visa cho nhân viên tham dự các hội nghị ở nước
+                            ngoài. Cô gặp khó khăn khi phải quản lý nhiều đơn đăng ký cùng lúc và cần một quy trình hiệu
+                            quả, đơn giản hơn. Sarah mong muốn có một bảng điều khiển để theo dõi trạng thái hồ sơ và
+                            hạn chế việc nhập dữ liệu lặp lại.
                         </div>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Goal</div>
+                        <div class="section-title-card">Goal</div>
                         <div class="list-item">
                             <div class="icon-check-circle"></div>
-                            <div class="text">Apply for several visas simultaneously.</div>
+                            <div class="text">Nộp nhiều hồ sơ xin visa cùng lúc.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-check-circle"></div>
-                            <div class="text">Get quick updates on application statuses.</div>
+                            <div class="text">Nhận cập nhật nhanh chóng về trạng thái xử lý hồ sơ.</div>
                         </div>
                     </div>
 
                     <div class="section">
-                        <div class="section-title">Pain Points</div>
+                        <div class="section-title-card">Pain Points</div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">RManual data entry is time-consuming.</div>
+                            <div class="text">Nhập dữ liệu thủ công tốn nhiều thời gian.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Visa status is hard to track.</div>
+                            <div class="text">Khó theo dõi trạng thái của từng hồ sơ visa.</div>
                         </div>
                         <div class="list-item">
                             <div class="icon-error-circle"></div>
-                            <div class="text">Trip approvals are too slow.</div>
+                            <div class="text">Quá trình phê hồ sơ diễn ra chậm.</div>
                         </div>
                     </div>
                 </div>
@@ -888,7 +1069,8 @@
                             </div>
                         </td>
                         <td class="competitor-name">eVisa Express</td>
-                        <td class="competitor-desc">Provides quick processing for multiple countries, focusing on fast
+                        <td class="competitor-desc">Provides quick processing for multiple countries, focusing on
+                            fast
                             approvals.</td>
                     </tr>
                     <tr>
@@ -898,7 +1080,8 @@
                             </div>
                         </td>
                         <td class="competitor-name">Atlys</td>
-                        <td class="competitor-desc">A digital-first, AI-powered visa application service with a strong
+                        <td class="competitor-desc">A digital-first, AI-powered visa application service with a
+                            strong
                             mobile presence.</td>
                     </tr>
                 </tbody>
@@ -1118,7 +1301,8 @@
                 <div class="strategy-card">
                     <h3>Enhance<br>Trust & Transparency</h3>
                     <ul>
-                        <li>Implement verified user testimonials and Trustpilot integrations like iVisa and Atlys.</li>
+                        <li>Implement verified user testimonials and Trustpilot integrations like iVisa and Atlys.
+                        </li>
                         <li>Add government partnership seals and compliance badges to reinforce credibility.</li>
                     </ul>
                 </div>
@@ -1127,7 +1311,8 @@
                     <h3>Enhance<br>Application Process UX</h3>
                     <ul>
                         <li>Add step-by-step document upload guidance like Atlys.</li>
-                        <li>Introduce predictive processing estimates like Atlys' AI-powered approval predictions.</li>
+                        <li>Introduce predictive processing estimates like Atlys' AI-powered approval predictions.
+                        </li>
                     </ul>
                 </div>
 
@@ -1143,7 +1328,8 @@
                 <div class="strategy-card">
                     <h3>Improve<br>SEO & User Awareness</h3>
                     <ul>
-                        <li>Strengthen content on "How to Identify Official eVisa Websites" to attract users confused by
+                        <li>Strengthen content on "How to Identify Official eVisa Websites" to attract users
+                            confused by
                             government vs. third-party providers.</li>
                         <li>Add government partnership seals and compliance badges to reinforce credibility.</li>
                     </ul>
@@ -1151,6 +1337,7 @@
             </div>
         </div>
     </div>
+
     <div class="site-structure">
         <div class="structure-container">
             <div class="journey-header">
@@ -1237,13 +1424,18 @@
             <img src="images/process-flow.svg" alt="Visa Application Flow" class="flow-svg">
         </div>
     </div>
+    </div>
+    <div class="journey-section">
+        <div class="journey-header">
+            <h2 class="h2-section">1. User Research & Analysis</h2>
+        </div>
 
-    <!-- Format cursor -->
+        <!-- Format cursor
     <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-    <!-- GSAP core -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-    <!-- ScrollTrigger plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="animations.js"></script>
+    <div class="cursor-outline"></div> -->
+        <!-- GSAP core -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+        <!-- ScrollTrigger plugin -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+        <script src="animations.js"></script>
 </body>
