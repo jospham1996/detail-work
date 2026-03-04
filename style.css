@@ -190,13 +190,13 @@ td .list-item {
     font-size: 18px;
     font-weight: 600;
     color: #1a1a1a;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 }
 
 .journey-cards-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
+    gap: 12px;
     margin-bottom: 40px;
 }
 
@@ -277,7 +277,7 @@ td .list-item {
 body {
     font-family: 'Plus Jakarta Sans', Roboto, 'Helvetica Neue', Arial, sans-serif;
     /* padding: 20px; */
-    background-color: #fdfdfd;
+    background-color: #Fdfdfd;
 }
 
 .personas-grid {
@@ -388,7 +388,8 @@ body {
 .competitors-table-wrapper {
     background: var(--bg-neutral-50);
     border-radius: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 32px;
+    padding-top: 16px;
     border: #1a1a1a;
 }
 
