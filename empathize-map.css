@@ -243,3 +243,205 @@
         font-size: 22px;
     }
 }
+
+
+/* Site Map*/
+
+/* *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #fbfbfb;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      padding: 48px 20px 72px;
+      color: #111;
+    } */
+
+.sm-wrap {
+    max-width: 900px;
+    margin: 0;
+}
+
+/* ── Header ── */
+.sm-eyebrow {
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #bbb;
+    margin-bottom: 6px;
+}
+
+.sm-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* ── Root node ── */
+.sm-root {
+    display: flex;
+    justify-content: center;
+}
+
+.sm-root-node {
+    background: #2A6EFF;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 28px;
+    border-radius: 8px;
+}
+
+/* ── Connector lines ── */
+.sm-line-v {
+    width: 2px;
+    background: #e0e0e0;
+    margin: 0 auto;
+}
+
+.sm-line-v--short {
+    height: 24px;
+}
+
+.sm-line-v--med {
+    height: 14px;
+}
+
+/* ── Horizontal bar ── */
+.sm-bar-wrap {
+    position: relative;
+    height: 2px;
+    margin-top: 0px;
+    margin-right: calc(6.6%);
+    margin-bottom: 0px;
+    margin-left: calc(6.6%);
+}
+
+.sm-bar {
+    position: absolute;
+    inset: 0;
+    background: #e0e0e0;
+}
+
+/* ── Columns grid ── */
+.sm-cols {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.sm-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ── Section node (L2) ── */
+.sm-section {
+    width: 100%;
+    background: #fff;
+    border: 1.5px solid #e4e4e4;
+    border-top: 3px solid #111;
+    border-radius: 8px;
+    padding: 11px 10px;
+    text-align: center;
+}
+
+.sm-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.4;
+}
+
+/* ── Page nodes (L3) ── */
+.sm-pages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sm-page {
+    width: 100%;
+    background: #fff;
+    border: 1.5px solid #ebebeb;
+    border-radius: 7px;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* ── Footer ── */
+.sm-footer {
+    margin-top: 36px;
+    font-size: 11px;
+    color: #ccc;
+    text-align: center;
+    letter-spacing: .04em;
+}
+
+/* ── Mobile: horizontal scroll ── */
+@media (max-width: 640px) {
+    body {
+        padding: 32px 0 48px;
+    }
+
+    .sm-wrap {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .sm-title {
+        margin-bottom: 28px;
+    }
+
+    .sm-root {
+        margin-bottom: 0;
+    }
+
+    /* Hide tree connectors */
+    .sm-line-v--short,
+    .sm-bar-wrap {
+        display: none;
+    }
+
+    /* Scroll container */
+    .sm-scroll-outer {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        margin: 0 -20px;
+        padding: 0 20px 16px;
+    }
+
+    .sm-scroll-inner {
+        display: block;
+    }
+
+    /* Flat flex row */
+    .sm-cols {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 12px;
+        width: max-content;
+    }
+
+    /* Each col = snap card */
+    .sm-col {
+        width: 160px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    /* Hide top connector inside each col */
+    .sm-col>.sm-line-v {
+        display: none;
+    }
+
+    .sm-footer {
+        padding: 0 20px;
+    }
+}

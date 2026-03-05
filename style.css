@@ -520,7 +520,7 @@ body {
 /* ===== SECTION WRAPPER ===== */
 .strategy-section {
     position: relative;
-    padding: 80px 40px;
+    padding: 40px 40px;
     border-radius: 20px;
     background: linear-gradient(135deg, #4B63E6, #3C56D4);
     overflow: hidden;
@@ -555,6 +555,7 @@ body {
     /* nằm dưới */
     pointer-events: none;
     /* tránh chặn hover */
+    filter: blur(24px);
 }
 
 .strategy-container {
@@ -648,10 +649,10 @@ body {
 /* GRID */
 .structure-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px 40px;
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 900px;
+    /* margin: 0 auto; */
     /* ← căn giữa */
 }
 

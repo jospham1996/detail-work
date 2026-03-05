@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // h3 + h4 + h2 animation + person card
-  gsap.utils.toArray(".h3-section, .h4-section, .h2-section, .persona-card, .gs-card, .competitors-table thead th, .strategy-section, .structure-column, .flow-container, .em-map, .pa-card").forEach((el) => {
+  gsap.utils.toArray(".h3-section, .h4-section, .strategy-section, .h2-section, .persona-card, .gs-card, .competitors-table thead th, .strategy-section, .structure-column, .flow-container, .em-map, .pa-card").forEach((el) => {
     gsap.from(el, {
       scrollTrigger: {
         trigger: el,
@@ -147,3 +147,12 @@ function goTo(index) {
 
 function slideNext() { goTo(currentSlide + 1); }
 function slidePrev() { goTo(currentSlide - 1); }
+
+
+gsap.to(".strategy-blob", {
+  y: -80,           // dịch lên 80px
+  duration: 1.5,      // thời gian 1 chiều
+  ease: "sine.inOut",
+  yoyo: true,       // tự động đảo chiều
+  repeat: -1        // lặp vô tận
+});
