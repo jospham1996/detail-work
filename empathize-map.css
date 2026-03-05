@@ -1,0 +1,245 @@
+/* ============================================================
+   TOKENS — chỉnh tại đây để thay đổi toàn bộ giao diện
+============================================================ */
+:root {
+    --max-width: 900px;
+    --circle-size: 120px;
+
+    --ink: #1C1916;
+    --ink-mid: #555555;
+    --ink-soft: #6B7280;
+    --border: #E5E7EB;
+
+    --font-display: 'Plus Jakarta Sans', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* ============================================================
+   RESET & BASE
+============================================================ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+  background: #F8F9FB;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--ink);
+  min-height: 100vh;
+  padding: 40px 16px 56px;
+} */
+
+/* ============================================================
+   WRAPPER
+============================================================ */
+.em-wrapper {
+    max-width: var(--max-width);
+    margin-top: 48px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+/* ============================================================
+   EMPATHY MAP CONTAINER — 2×2 grid, circle overlaid
+============================================================ */
+.em-map {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
+    background: transparent;
+}
+
+/* ============================================================
+   QUADRANT CARDS — CSS chung cho cả 4 ô
+   Mỗi ô chỉ cần khai báo 2 biến:
+     --quad-color  →  màu viền + tiêu đề + bullet
+     --quad-bg     →  màu nền
+============================================================ */
+.em-quad {
+    /* Giá trị mặc định — bị override bởi từng modifier bên dưới */
+    --quad-color: #000;
+    --quad-bg: #fff;
+
+    padding: 30px 26px 26px;
+    position: relative;
+    min-height: 220px;
+    border-radius: 16px;
+    background: var(--quad-bg);
+    border: 0px solid var(--quad-color);
+}
+
+/* ── Màu riêng từng ô: chỉ cần đổi 2 dòng này ── */
+.em-quad--says {
+    --quad-color: #2A85FF;
+    --quad-bg: #EFF6FF;
+}
+
+.em-quad--thinks {
+    --quad-color: #58BD7D;
+    --quad-bg: #e8f8ee;
+}
+
+.em-quad--does {
+    --quad-color: #9747FF;
+    --quad-bg: #f3eaff;
+}
+
+.em-quad--feels {
+    --quad-color: #FF6838;
+    --quad-bg: #fff2ef;
+}
+
+/* ── Heading — tự lấy màu từ --quad-color của ô cha ── */
+.em-quad-title {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--quad-color);
+    justify-content: center
+}
+
+/* ── Bullet list ── */
+.em-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.em-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 14px;
+    color: var(--ink-mid);
+    line-height: 1.55;
+}
+
+.em-list li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: 8px;
+    /* Tự lấy màu từ ô cha — không cần override riêng */
+    background: var(--quad-color);
+}
+
+/* Says dùng font nghiêng vì là trích dẫn */
+.em-quad--says .em-list li {
+    font-style: normal;
+}
+
+/* Nudge text away from center circle */
+.em-quad--says .em-list {
+    padding-right: 36px;
+    padding-bottom: 44px;
+}
+
+.em-quad--thinks .em-list {
+    padding-left: 0px;
+    padding-bottom: 44px;
+}
+
+.em-quad--does .em-list {
+    padding-right: 0px;
+    padding-top: 16px;
+}
+
+.em-quad--feels .em-list {
+    padding-left: 0px;
+    padding-top: 16px;
+}
+
+/* ============================================================
+   CENTER USER CIRCLE
+============================================================ */
+.em-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    background: #B1B5C3;
+    border: 4px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    z-index: 10;
+    text-align: center;
+}
+
+
+.em-center-label {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.em-center-sub {
+    font-size: 10px;
+    color: var(--ink-soft);
+    padding: 0 10px;
+    line-height: 1.4;
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.em-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 11.5px;
+    color: #9CA3AF;
+    letter-spacing: .04em;
+}
+
+/* ============================================================
+   RESPONSIVE — mobile 1 cột
+============================================================ */
+@media (max-width: 540px) {
+    .em-map {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 12px;
+    }
+
+    .em-center {
+        display: none;
+    }
+
+    .em-quad {
+        min-height: auto;
+    }
+
+    .em-quad--says .em-list,
+    .em-quad--thinks .em-list,
+    .em-quad--does .em-list,
+    .em-quad--feels .em-list {
+        padding: 0;
+    }
+
+    .em-page-title h1 {
+        font-size: 22px;
+    }
+}

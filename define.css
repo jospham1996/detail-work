@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pa-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+/* ============================================================
+   CARD — shared base
+   Chỉ cần đổi --card-color trên từng modifier.
+============================================================ */
+.pa-card {
+    --card-color: #999;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-top: 3px solid var(--card-color);
+    border-radius: 14px;
+    padding: 24px 22px 22px;
+}
+
+.pa-card--who:hover {
+    background: #EFF6FF;
+}
+
+.pa-card--what:hover {
+    background: #e8f8ee;
+}
+
+.pa-card--when:hover {
+    background: #f3eaff;
+}
+
+.pa-card--where:hover {
+    background: #fff8fc;
+}
+
+.pa-card--why:hover {
+    background: #fff2ef;
+}
+
+.pa-card--how:hover {
+    background: #ebfaff;
+}
+
+/* ── Per-card colours ── */
+.pa-card--who {
+    --card-color: #2A85FF;
+}
+
+.pa-card--what {
+    --card-color: #58BD7D;
+}
+
+.pa-card--when {
+    --card-color: #9747FF;
+}
+
+.pa-card--where {
+    --card-color: #F472B6;
+}
+
+.pa-card--why {
+    --card-color: #FF6838;
+}
+
+.pa-card--how {
+    --card-color: #4BC9F0;
+}
+
+.pa-card-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    letter-spacing: .06em;
+    color: var(--card-color);
+    margin-bottom: 8px;
+}
+
+.pa-card-subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #23262F;
+    margin-bottom: 14px;
+}
+
+.pa-divider {
+    height: 1px;
+    background: #f0f0f0;
+    margin-bottom: 14px;
+}
+
+.pa-divider {
+
+    background: #ffffff;
+}
+
+.pa-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pa-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.55;
+}
+
+.pa-list li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: 8px;
+    background: var(--card-color);
+    opacity: .6;
+}
+
+@media (max-width: 640px) {
+    .pa-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .pa-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Goal Statement*/
+
+/* ── Card ── */
+.gs-card {
+  max-width: 900px;
+  width: 100%;
+  background: #2A6EFF;
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  overflow: hidden;
+  min-height: 280px;
+}
+
+/* ── Left: title + icon ── */
+.gs-left {
+  position: relative;
+  padding: 36px 28px;
+  overflow: hidden;
+}
+
+.gs-icon {
+  position: absolute;
+  bottom: -24px;
+  left: -16px;
+  width: 210px;
+  pointer-events: none;
+}
+
+/* ── Right: quote box ── */
+.gs-right {
+  padding: 24px 24px 24px 0;
+  display: flex;
+  align-items: center;
+}
+
+.gs-quote {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #23262F;
+  line-height: 1.85;
+  width: 100%;
+}
+
+.gs-quote strong {
+  font-weight: 600;
+  color: #111;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .gs-card {
+    grid-template-columns: 1fr;
+    padding-top: 0px;
+  }
+
+  .gs-left {
+    padding: 0 16px 16px;
+  }
+
+  /* Ẩn SVG khi màn hình nhỏ */
+  .gs-icon {
+    display: none;
+  }
+
+  .gs-right {
+    padding: 0 16px 16px;
+  }
+
+  .gs-title { font-size: 34px; }
+}

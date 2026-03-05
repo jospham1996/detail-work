@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // h3 + h4 + h2 animation + person card
-  gsap.utils.toArray(".h3-section, .h4-section, .h2-section, .persona-card, .competitors-table thead th, .strategy-section, .structure-column, .flow-container").forEach((el) => {
+  gsap.utils.toArray(".h3-section, .h4-section, .h2-section, .persona-card, .gs-card, .competitors-table thead th, .strategy-section, .structure-column, .flow-container, .em-map, .pa-card").forEach((el) => {
     gsap.from(el, {
       scrollTrigger: {
         trigger: el,
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const cards = document.querySelectorAll(".persona-card");
+const cards = document.querySelectorAll(".persona-card, .em-quad, .gs-card, .pa-card");
 
 cards.forEach(card => {
 
