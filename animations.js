@@ -1,3 +1,27 @@
+// Smooth scroll with Lenis
+
+const lenis = new Lenis({
+  duration: 2,
+  smooth: true,
+  direction: 'vertical',
+  gestureDirection: 'vertical',
+  smoothTouch: false,
+  touchMultiplier: 2,
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+lenis.on('scroll', ScrollTrigger.update);
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000);
+});
+
+gsap.ticker.lagSmoothing(0);
 document.addEventListener("DOMContentLoaded", function () {
 
   gsap.registerPlugin(ScrollTrigger);
@@ -16,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // h3 + h4 + h2 animation + person card
-  gsap.utils.toArray(".h3-section, .h4-section, .strategy-section, .h2-section, .persona-card, .gs-card, .competitors-table thead th, .strategy-section, .structure-column, .flow-container, .em-map, .pa-card").forEach((el) => {
+  gsap.utils.toArray(".block-title, .h3-section, .h4-section, .section, .strategy-section, .h2-section, .persona-card, .gs-card, .competitors-table thead th, .strategy-section, .structure-column, .flow-container, .em-map, .pa-card").forEach((el) => {
     gsap.from(el, {
       scrollTrigger: {
         trigger: el,
@@ -156,3 +180,5 @@ gsap.to(".strategy-blob", {
   yoyo: true,       // tự động đảo chiều
   repeat: -1        // lặp vô tận
 });
+
+gsap.registerPlugin(ScrollTrigger);

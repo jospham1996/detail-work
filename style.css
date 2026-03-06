@@ -931,16 +931,16 @@ body {
 }
 
 
-/* Ẩn Scroll Bar */
+/* Ẩn Scroll Bar
 /* Chrome, Edge, Safari */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
-/* Firefox */
+/* Firefox
 html {
     scrollbar-width: none;
-}
+} */
 
 /* ── Header ── */
 .cs-label {
@@ -1183,4 +1183,8 @@ html {
 .bullet-content {
     padding-left: 20px;
     text-indent: -20px;
+}
+
+html, body {
+  scroll-behavior: auto;
 }

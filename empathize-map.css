@@ -283,12 +283,14 @@
 }
 
 .sm-root-node {
-    background: #2A6EFF;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 11px 28px;
+    background: #fff;
+    border: 1.5px solid #e4e4e4;
+    border-top: 3px solid #2A85FF;
     border-radius: 8px;
+    padding: 8px 24px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 /* ── Connector lines ── */
@@ -340,10 +342,14 @@
     width: 100%;
     background: #fff;
     border: 1.5px solid #e4e4e4;
-    border-top: 3px solid #111;
+    border-top: 3px solid #2A85FF;
     border-radius: 8px;
     padding: 11px 10px;
     text-align: center;
+}
+
+.sm-section:hover{
+    background: #EFF6FF;
 }
 
 .sm-section-label {
@@ -359,6 +365,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sm-page:hover {
+    background: #EFF6FF;
 }
 
 .sm-page {
