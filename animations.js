@@ -17,7 +17,7 @@ function raf(time) {
 requestAnimationFrame(raf);
 lenis.on('scroll', ScrollTrigger.update);
 
-gsap.ticker.add((time)=>{
+gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 
@@ -182,3 +182,76 @@ gsap.to(".strategy-blob", {
 });
 
 gsap.registerPlugin(ScrollTrigger);
+
+
+//Reading Indicator: Chỉ báo tiến độ đọc
+const readingBar = document.getElementById('progress-bar');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;                          // Vị trí đã cuộn
+  const docHeight = document.body.scrollHeight;              // Tổng chiều cao trang
+  const winHeight = window.innerHeight;                      // Chiều cao màn hình
+  const scrollPercent = scrollTop / (docHeight - winHeight); // Tỉ lệ 0 → 1
+
+  readingBar.style.width = (scrollPercent * 100) + '%';    // Cập nhật thanh
+});
+
+// Scrollspy — chỉ theo dõi đúng 5 section
+//Thanh Progress
+const progressBar = document.getElementById('progress-bar');
+const stepBtns = document.querySelectorAll('.step-btn');
+
+const trackedIds = ['introduction', 'research', 'empathize', 'ideate', 'ia'];
+
+// ← Thêm 2 dòng này
+let isScrollingByClick = false;
+let scrollTimer = null;
+
+function setActive(id) {
+  stepBtns.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.step === id);
+  });
+  if (stepColors[id]) {
+    progressBar.style.background = stepColors[id];
+  }
+}
+
+stepBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const id = btn.dataset.step;
+    const target = document.getElementById(id);
+    if (target) {
+      const y = target.getBoundingClientRect().top + window.scrollY - 72;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    setActive(id);
+  });
+});
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+
+  // Ẩn/hiện nav khi scroll đến section đầu tiên
+  const firstSection = document.getElementById('introduction');
+  if (firstSection) {
+    const firstTop = firstSection.getBoundingClientRect().top;
+    if (firstTop <= 60) {
+      document.getElementById('step-nav').classList.add('visible');
+    } else {
+      document.getElementById('step-nav').classList.remove('visible');
+    }
+  }
+
+  let current = trackedIds[0];
+  trackedIds.forEach(id => {
+    const section = document.getElementById(id);
+    if (section && section.getBoundingClientRect().top <= 80) {
+      current = id;
+    }
+  });
+
+  setActive(current);
+}, { passive: true });

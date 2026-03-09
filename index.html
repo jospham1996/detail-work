@@ -18,6 +18,35 @@
 
 <body>
 
+    <!-- Reading Indicator -->
+    <div id="progress-track">
+        <div id="progress-bar"></div>
+    </div>
+    <nav id="step-nav">
+        <div class="nav-inner">
+            <a class="step-btn active" href="#introduction" data-step="introduction" style="--active-color:#2A85FF">
+                <span class="step-num">01</span>
+                <span class="step-label">Introduction</span>
+            </a>
+            <a class="step-btn" href="#research" data-step="research" style="--active-color:##2A85FF">
+                <span class="step-num">02</span>
+                <span class="step-label">Research & Analysis</span>
+            </a>
+            <a class="step-btn" href="#empathize" data-step="empathize" style="--active-color:#2A85FF">
+                <span class="step-num">03</span>
+                <span class="step-label">Empathize</span>
+            </a>
+            <a class="step-btn" href="#ideate" data-step="ideate" style="--active-color:#2A85FF">
+                <span class="step-num">04</span>
+                <span class="step-label">Ideate</span>
+            </a>
+            <a class="step-btn" href="#ia" data-step="ia" style="--active-color:#2A85FF">
+                <span class="step-num">05</span>
+                <span class="step-label">Information Architecture</span>
+            </a>
+        </div>
+    </nav>
+
     <!--Hero Header-->
     <section>
         <div class="hero-header">
@@ -32,83 +61,159 @@
         </div>
     </section>
 
-    <!-------------------------------------------------------------------------------------------------->
-
-    <!--Product Conte-->
+    <!----------------------------------A. Empathize (Đồng cảm)----------------------------------------->
+    <!--Title Section-->
     <section>
+        <div>
+            <div class="block-title">
+                <h2>A. Empathize (Đồng cảm)</h2>
+            </div>
+        </div>
+    </section>
+    <section id="introduction">
         <div class="content-wrapper">
-            <!-- Bối cảnh sản phẩm -->
+            <!-- Vision -->
             <div class="section">
-                <h2 class="section-title">Bối cảnh sản phẩm</h2>
+                <h2 class="section-title">Tầm nhìn</h2>
                 <div class="section-body">
-                    <p>190evisa là nền tảng hỗ trợ đăng ký eVisa thông qua bên thứ ba, giúp người dùng nộp hồ sơ visa
-                        điện
-                        tử cho nhiều quốc gia khác nhau. Sản phẩm hoạt động theo mô hình thu phí dịch vụ và cung cấp các
-                        tùy
-                        chọn thời gian xử lý (tiêu chuẩn, nhanh). Nhóm người dùng chính bao gồm: Khách du lịch cá nhân,
-                        người lần đầu làm visa, người cần visa gấp, doanh nghiệp / HR xử lý hồ sơ số lượng lớn.</p>
+                    <p>190eVisa hướng tới việc trở thành một nền tảng giúp mọi người xin visa trực tuyến một cách
+                        đơn giản và dễ hiểu hơn. Thay vì phải tự tìm hiểu nhiều thông tin rời rạc hoặc đối mặt với
+                        những biểu mẫu phức tạp, người dùng có thể hoàn tất hồ sơ thông qua một quy trình rõ ràng,
+                        có hướng dẫn từng bước. Mục tiêu của sản phẩm là giúp người dùng cảm thấy yên tâm và chủ
+                        động hơn khi chuẩn bị cho chuyến đi của mình.</p>
                 </div>
             </div>
-            <!-- Vấn đề -->
+            <!-- Giá trị sản phẩm mang lại -->
             <div class="section">
-                <h2 class="section-title">Vấn đề</h2>
+                <h2 class="section-title">Giá trị khác biệt của nền tảng</h2>
                 <div class="section-body">
-                    <p>Mặc dù nền tảng duy trì lượng truy cập ổn định, tỷ lệ hoàn tất đăng ký eVisa không đạt kỳ vọng
-                        kinh
-                        doanh. Điều này ảnh hưởng trực tiếp đến hiệu suất chuyển đổi và doanh thu, đồng thời làm tăng áp
-                        lực
-                        cho đội hỗ trợ do người dùng không hoàn tất hồ sơ.
-                        Từ góc độ sản phẩm, cần xác định rõ tại bước nào trong hành trình đăng ký đang xảy ra ma sát và
-                        nguyên nhân cụ thể dẫn đến tình trạng rời bỏ.</p>
+                    <p>190eVisa tập trung giải quyết những khó khăn phổ biến mà nhiều người gặp phải khi xin visa
+                        trực tuyến, như không biết cần chuẩn bị giấy tờ gì, biểu mẫu quá dài và khó hiểu, hoặc không
+                        rõ hồ sơ của mình đang được xử lý đến đâu. Nền tảng mang lại trải nghiệm đăng ký đơn giản
+                        hơn nhờ hướng dẫn rõ ràng, quy trình từng bước và khả năng theo dõi trạng thái hồ sơ. Nhờ
+                        đó, người dùng có thể hoàn tất hồ sơ nhanh hơn, giảm sai sót và cảm thấy tin tưởng hơn khi
+                        sử dụng dịch vụ.</p>
                 </div>
             </div>
-            <!-- Mục tiêu nghiên cứu -->
+            <!-- Use Case -->
             <div class="section">
-                <h2 class="section-title">Mục tiêu nghiên cứu</h2>
+                <h2 class="section-title">Use Case</h2>
                 <div class="section-body">
-                    <p>- Tăng tỷ lệ hoàn tất đăng ký (Completion Rate) bằng cách giảm user rời bỏ trong quy trình nộp hồ
-                        sơ.
-                    </p>
-                    <p>- Xác định và loại bỏ các điểm ma sát chính trong việc đăng ký, đặc biệt tại các bước yêu cầu
-                        nhập
-                        thông tin và tải tài liệu.</p>
-                    <p>- Thu hẹp hiệu suất giữa Mobile và Desktop, đảm bảo trải nghiệm nhất quán trên thiết bị.</p>
-                    <p>- Tăng mức độ tin tưởng trước phần thanh toán, cải thiện khả năng chuyển đổi ở bước cuối cùng.
-                    </p>
-                    <p>- Tối ưu quy trình đăng ký theo hướng đơn giản, rõ ràng và minh bạch hơn, phù hợp với kỳ vọng của
-                        người
-                        dùng quốc tế.</p>
+                    <p>Người dùng thường tìm đến 190eVisa khi đang chuẩn bị cho một chuyến đi nước ngoài nhưng chưa
+                        quen với quy trình xin visa. Sau khi truy cập vào nền tảng, họ sẽ chọn quốc gia và loại visa
+                        cần đăng ký, điền thông tin theo từng bước và tải lên các giấy tờ cần thiết. Trong quá trình
+                        đó, hệ thống sẽ cung cấp hướng dẫn rõ ràng để giúp người dùng hoàn thành hồ sơ dễ dàng hơn.
+                        Sau khi nộp hồ sơ, người dùng có thể theo dõi trạng thái xử lý cho đến khi visa được phê
+                        duyệt.</p>
+                </div>
+            </div>
+            <!-- Vấn đề hiện tại -->
+            <div class="section">
+                <h2 class="section-title">Vấn đề hiện tại</h2>
+                <div class="section-body">
+                    <p>Mặc dù nền tảng vẫn có lượng người truy cập khá ổn định, nhưng số người hoàn tất đăng ký
+                        eVisa lại thấp hơn kỳ vọng. Nhiều người bắt đầu quy trình nhưng dừng lại giữa chừng, khiến
+                        tỷ lệ chuyển đổi và doanh thu bị ảnh hưởng. Đồng thời, điều này cũng làm tăng khối lượng
+                        công việc cho đội hỗ trợ khi người dùng liên hệ để hỏi về hồ sơ chưa hoàn tất. Vì vậy, cần
+                        tìm hiểu rõ <strong>người dùng đang gặp khó khăn ở bước nào trong quá trình đăng ký và
+                            nguyên nhân
+                            khiến họ rời bỏ trước khi hoàn tất hồ sơ.</strong></p>
+                </div>
+            </div>
+            <!--Đối thủ cạnh tranh-->
+            <div class="journey-header">
+                <h2 class="section-title">Phân tích và so sánh đối thủ</h2>
+                <div class="section-body">
+                    <p>Để có cái nhìn toàn diện về thị trường, tôi sẽ so sánh 190evisa với ba nền tảng eVisa phổ
+                        biến đang
+                        cung
+                        cấp dịch vụ tương tự là: iVisa, eVisa Express, Atlys.</p>
+                </div>
+                <div class="competitors-table-wrapper">
+                    <table class="competitors-table">
+                        <thead>
+                            <tr>
+                                <th>Logo</th>
+                                <th>Đối thủ</th>
+                                <th>Mô tả chung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="competitor-logos">
+                                        <img src="images/ivisa.png" alt="Avatar">
+                                    </div>
+                                </td>
+                                <td class="competitor-name">iVisa</td>
+                                <td class="competitor-desc">Một trong những dịch vụ eVisa phổ biến nhất, cung cấp
+                                    giao diện
+                                    thân thiện và hỗ trợ visa cho nhiều quốc gia trên toàn cầu.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="competitor-logos">
+                                        <img src="images/evisaexpress.png" alt="Avatar">
+                                    </div>
+                                </td>
+                                <td class="competitor-name">eVisa Express</td>
+                                <td class="competitor-desc">Nền tảng xử lý visa nhanh cho nhiều quốc gia, tập trung
+                                    vào tốc
+                                    độ xét duyệt hồ sơ.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="competitor-logos">
+                                        <img src="images/atly.png" alt="Avatar">
+                                    </div>
+                                </td>
+                                <td class="competitor-name">Atlys</td>
+                                <td class="competitor-desc">Dịch vụ xin visa theo hướng digital-first, sử dụng AI để
+                                    hỗ trợ
+                                    quy trình đăng ký và tối ưu trải nghiệm trên thiết bị di động.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-------------------------------------------------------------------------------------------------->
-    
-    <!--Research & Analysis-->
+    <!----------------------------------B. Define (Xác định)----------------------------------------->
+    <!--Title Section-->
     <section>
-        <!--Title Section-->
-        <section>
-            <div>
-                <div class="block-title">
-                    <h2>Research & Analysis</h2>
+        <div>
+            <div class="block-title">
+                <h2>B. Define (Xác định)</h2>
+            </div>
+        </div>
+    </section>
+
+    <!--Mở đầu Define-->
+    <section>
+        <div class="content-wrapper">
+            <div class="section">
+                <h2 class="section-title">Phân tích</h2>
+                <div class="section-body">
+                    <p><strong>Để tìm hiểu nguyên nhân gốc rễ của vấn đề, tôi triển khai phân tích theo ba hướng
+                            chính:</strong></p>
+                    <p>1. Phân tích dữ liệu định lượng (dựa trên dữ liệu từ GA4)</p>
+                    <p>2. Đánh giá trải nghiệm hiện tại</p>
+                    <p>3. Phân tích và so sánh đối thủ</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!--Phân tích dữ liệu-->
+    <section>
         <section>
             <div class="content-wrapper">
-                <div class="section">
-                    <div class="section-body">
-                        <p><strong>Để tìm hiểu nguyên nhân gốc rễ của vấn đề, tôi triển khai nghiên cứu theo ba hướng
-                                chính:</strong></p>
-                        <p>1. Phân tích dữ liệu định lượng (dựa trên dữ liệu từ GA4)</p>
-                        <p>2. Đánh giá trải nghiệm hiện tại</p>
-                        <p>3. Phân tích và so sánh đối thủ</p>
-                    </div>
-                </div>
                 <!-- 1. Phân tích dữ liệu định lượng (GA4 Funnel) -->
                 <div class="section">
-                    <h2 class="section-title">1. Phân tích dữ liệu định lượng (GA4 Funnel)</h2>
+                    <div class="h3-section">
+                        <h3>1. Phân tích dữ liệu định lượng (GA4 Funnel)</h3>
+                    </div>
                     <div class="section-body">
                         <p>Dựa trên phân tích funnel từ GA4 trong 30 ngày gần nhất, cho thấy tỷ lệ rời bỏ tăng mạnh khi
                             người
@@ -158,7 +263,9 @@
 
                 <!-- 2. Đánh giá trải nghiệm hiện tại -->
                 <div class="section">
-                    <h2 class="section-title">2. Đánh giá trải nghiệm hiện tại</h2>
+                    <div class="h3-section">
+                        <h3>2. Đánh giá trải nghiệm hiện tại</h3>
+                    </div>
                     <div class="section-body">
                         <p>Sau khi xác định các điểm rời bỏ trong dữ liệu, tôi tiến hành đánh giá giao diện đăng ký hiện
                             tại để
@@ -243,64 +350,10 @@
                     </div>
                 </div>
 
-                <!--  3. Phân tích và so sánh đối thủ -->
-                <div class="journey-header">
-                    <h2 class="section-title">3. Phân tích và so sánh đối thủ</h2>
-                    <div class="section-body">
-                        <p>Để có cái nhìn toàn diện về thị trường, tôi sẽ so sánh 190evisa với ba nền tảng eVisa phổ
-                            biến đang
-                            cung
-                            cấp dịch vụ tương tự là: iVisa, eVisa Express, Atlys.</p>
-                    </div>
-                    <div class="competitors-table-wrapper">
-                        <table class="competitors-table">
-                            <thead>
-                                <tr>
-                                    <th>Logo</th>
-                                    <th>Đối thủ</th>
-                                    <th>Mô tả chung</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="competitor-logos">
-                                            <img src="images/ivisa.png" alt="Avatar">
-                                        </div>
-                                    </td>
-                                    <td class="competitor-name">iVisa</td>
-                                    <td class="competitor-desc">Một trong những dịch vụ eVisa phổ biến nhất, cung cấp
-                                        giao diện
-                                        thân thiện và hỗ trợ visa cho nhiều quốc gia trên toàn cầu.</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="competitor-logos">
-                                            <img src="images/evisaexpress.png" alt="Avatar">
-                                        </div>
-                                    </td>
-                                    <td class="competitor-name">eVisa Express</td>
-                                    <td class="competitor-desc">Nền tảng xử lý visa nhanh cho nhiều quốc gia, tập trung
-                                        vào tốc
-                                        độ xét duyệt hồ sơ.</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="competitor-logos">
-                                            <img src="images/atly.png" alt="Avatar">
-                                        </div>
-                                    </td>
-                                    <td class="competitor-name">Atlys</td>
-                                    <td class="competitor-desc">Dịch vụ xin visa theo hướng digital-first, sử dụng AI để
-                                        hỗ trợ
-                                        quy trình đăng ký và tối ưu trải nghiệm trên thiết bị di động.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- 6. Competitor Feature Comparison -->
-                    <div class="section-body">
-                        <p><strong>So sánh tính năng UX/UI của các đối thủ</p></strong>
+                <!-- 3. So sánh UX/UI đối thủ cạnh tranh -->
+                <div class="section">
+                    <div class="h3-section">
+                        <h3>3. So sánh UX/UI đối thủ cạnh tranh</h3>
                     </div>
                     <div class="competitors-table-wrapper">
                         <table class="competitors-table">
@@ -493,7 +546,6 @@
                                             <div class="text">Có phản hồi về việc hỗ trợ chưa ổn định</div>
                                     </td>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
@@ -502,1085 +554,1070 @@
         </section>
     </section>
 
-    <!-------------------------------------------------------------------------------------------------->
-    
-    <!--Empathize-->
+    <!--Empathize Map-->
     <section>
-        <!--Title Section-->
-        <section>
-            <div>
-                <div class="block-title">
-                    <h2>Empathize</h2>
+        <div style="gap: 8px;" class="content-wrapper">
+
+            <!-- Page title -->
+            <div class="section">
+                <h2 class="section-title">Empathy Map</h2>
+                <div class="section-body">
+                    <p>Dựa trên kết quả từ phân tích dữ liệu hành vi người dùng (GA4), đánh giá trải nghiệm hiện tại
+                        và
+                        phân tích đối thủ, Empathy Map được xây dựng nhằm tổng hợp cách người dùng suy nghĩ, hành
+                        động
+                        và
+                        cảm nhận trong quá trình đăng ký eVisa.</p>
                 </div>
             </div>
-        </section>
+            <!-- Empathy Map: 2×2 grid + center circle -->
+            <div class="em-map" role="main" aria-label="Empathy Map">
 
-        <!--Empathize Map-->
-        <section>
-            <div style="gap: 8px;" class="content-wrapper">
+                <!-- TOP-LEFT: SAYS -->
+                <section class="em-quad em-quad--says" aria-label="Says">
+                    <h2 class="em-quad-title">Says</h2>
+                    <ul class="em-list">
+                        <li>Tôi muốn làm visa nhanh và đơn giản nhất có thể.</li>
+                        <li>Trang này có phải website chính thức không?</li>
+                        <li>Tôi cần chuẩn bị những giấy tờ gì?</li>
+                        <li>Bao lâu thì tôi nhận được visa?</li>
+                    </ul>
+                </section>
 
-                <!-- Page title -->
-                <div class="section">
-                    <h2 class="section-title">Empathy Map</h2>
-                    <div class="section-body">
-                        <p>Dựa trên kết quả từ phân tích dữ liệu hành vi người dùng (GA4), đánh giá trải nghiệm hiện tại
-                            và
-                            phân tích đối thủ, Empathy Map được xây dựng nhằm tổng hợp cách người dùng suy nghĩ, hành
-                            động
-                            và
-                            cảm nhận trong quá trình đăng ký eVisa.</p>
-                    </div>
-                </div>
-                <!-- Empathy Map: 2×2 grid + center circle -->
-                <div class="em-map" role="main" aria-label="Empathy Map">
+                <!-- TOP-RIGHT: THINKS -->
+                <section class="em-quad em-quad--thinks" aria-label="Thinks">
+                    <h2 class="em-quad-title">Thinks</h2>
+                    <ul class="em-list">
+                        <li>Sợ nộp sai giấy tờ hoặc thông tin.</li>
+                        <li>Không chắc nền tảng này có đáng tin cậy hay không.</li>
+                        <li>Muốn biết chi phí tổng trước khi bắt đầu.</li>
+                        <li>Hy vọng quy trình không quá phức tạp.</li>
+                    </ul>
+                </section>
 
-                    <!-- TOP-LEFT: SAYS -->
-                    <section class="em-quad em-quad--says" aria-label="Says">
-                        <h2 class="em-quad-title">Says</h2>
-                        <ul class="em-list">
-                            <li>Tôi muốn làm visa nhanh và đơn giản nhất có thể.</li>
-                            <li>Trang này có phải website chính thức không?</li>
-                            <li>Tôi cần chuẩn bị những giấy tờ gì?</li>
-                            <li>Bao lâu thì tôi nhận được visa?</li>
-                        </ul>
-                    </section>
+                <!-- BOTTOM-LEFT: DOES -->
+                <section class="em-quad em-quad--does" aria-label="Does">
+                    <h2 class="em-quad-title">Does</h2>
+                    <ul class="em-list">
+                        <li>Tìm kiếm Google: “apply evisa + country”.</li>
+                        <li>So sánh nhiều website visa khác nhau.</li>
+                        <li>Đọc hướng dẫn trước khi bắt đầu form.</li>
+                        <li>Thoát ra kiểm tra tài liệu trước khi upload.</li>
+                    </ul>
+                </section>
 
-                    <!-- TOP-RIGHT: THINKS -->
-                    <section class="em-quad em-quad--thinks" aria-label="Thinks">
-                        <h2 class="em-quad-title">Thinks</h2>
-                        <ul class="em-list">
-                            <li>Sợ nộp sai giấy tờ hoặc thông tin.</li>
-                            <li>Không chắc nền tảng này có đáng tin cậy hay không.</li>
-                            <li>Muốn biết chi phí tổng trước khi bắt đầu.</li>
-                            <li>Hy vọng quy trình không quá phức tạp.</li>
-                        </ul>
-                    </section>
+                <!-- BOTTOM-RIGHT: FEELS -->
+                <section class="em-quad em-quad--feels" aria-label="Feels">
+                    <h2 class="em-quad-title">Feels</h2>
+                    <ul class="em-list">
+                        <li>Lo lắng khi không chắc tài liệu đã đúng.</li>
+                        <li>Bối rối khi form có quá nhiều bước.</li>
+                        <li>Căng thẳng khi không thấy trạng thái hồ sơ.</li>
+                        <li>Yên tâm hơn khi có hướng dẫn rõ ràng.</li>
+                    </ul>
+                </section>
 
-                    <!-- BOTTOM-LEFT: DOES -->
-                    <section class="em-quad em-quad--does" aria-label="Does">
-                        <h2 class="em-quad-title">Does</h2>
-                        <ul class="em-list">
-                            <li>Tìm kiếm Google: “apply evisa + country”.</li>
-                            <li>So sánh nhiều website visa khác nhau.</li>
-                            <li>Đọc hướng dẫn trước khi bắt đầu form.</li>
-                            <li>Thoát ra kiểm tra tài liệu trước khi upload.</li>
-                        </ul>
-                    </section>
-
-                    <!-- BOTTOM-RIGHT: FEELS -->
-                    <section class="em-quad em-quad--feels" aria-label="Feels">
-                        <h2 class="em-quad-title">Feels</h2>
-                        <ul class="em-list">
-                            <li>Lo lắng khi không chắc tài liệu đã đúng.</li>
-                            <li>Bối rối khi form có quá nhiều bước.</li>
-                            <li>Căng thẳng khi không thấy trạng thái hồ sơ.</li>
-                            <li>Yên tâm hơn khi có hướng dẫn rõ ràng.</li>
-                        </ul>
-                    </section>
-
-                    <!-- CENTER CIRCLE -->
-                    <div class="em-center" aria-label="User persona">
-                        <span class="em-center-label">Users</span>
-                    </div>
-
-                </div><!-- /em-map -->
-
-            </div>
-        </section>
-
-        <!--Define 5w-h-->
-        <section>
-            <div style="gap: 8px;" class="content-wrapper">
-
-                <!-- Page title -->
-                <div class="section">
-                    <h2 class="section-title">Define – Problem Analysis (5W-H)</h2>
-                    <div class="section-body">
-                        <p>Thông qua phương pháp 5W-H, các vấn đề được phân tích theo nhiều góc độ để hiểu rõ ai bị ảnh
-                            hưởng,
-                            vấn đề xảy ra khi nào, ở đâu và vì sao, từ đó làm cơ sở cho việc đề xuất giải pháp UX ở các
-                            bước
-                            tiếp theo.</p>
-                    </div>
+                <!-- CENTER CIRCLE -->
+                <div class="em-center" aria-label="User persona">
+                    <span class="em-center-label">Users</span>
                 </div>
 
-                <div class="pa-grid">
+            </div><!-- /em-map -->
 
-                    <article class="pa-card pa-card--who">
-                        <h2 class="pa-card-title">Who</h2>
-                        <p class="pa-card-subtitle">Ai là người bị ảnh hưởng?</p>
-                        <div class="pa-divider"></div>
-                        <ul class="pa-list">
-                            <li>Khách du lịch cá nhân lần đầu đăng ký eVisa online.</li>
-                            <li>Người tự thực hiện hồ sơ không thông qua agency.</li>
-                            <li>Người cần visa gấp và muốn hoàn tất quy trình nhanh.</li>
-                            <li>Người chưa quen với yêu cầu tài liệu và quy trình visa điện tử.</li>
-                        </ul>
-                    </article>
-
-                    <article class="pa-card pa-card--what">
-                        <h2 class="pa-card-title">What</h2>
-                        <p class="pa-card-subtitle">Vấn đề chính là gì?</p>
-                        <div class="pa-divider"></div>
-                        <ul class="pa-list">
-                            <li>Người dùng không rõ cần chuẩn bị những tài liệu nào khi upload.</li>
-                            <li>Thiếu hiển thị trạng thái hồ sơ sau khi nộp.</li>
-                            <li>Chi phí dịch vụ và cấu trúc giá chưa đủ minh bạch.</li>
-                            <li>Quy trình form dài và nhiều bước gây quá tải nhận thức.</li>
-                        </ul>
-                    </article>
-
-                    <article class="pa-card pa-card--when">
-                        <h2 class="pa-card-title">When</h2>
-                        <p class="pa-card-subtitle">Khi nào vấn đề xảy ra?</p>
-                        <div class="pa-divider"></div>
-                        <ul class="pa-list">
-                            <li>Điền thông tin hồ sơ visa.</li>
-                            <li>Chuẩn bị và upload tài liệu.</li>
-                            <li>Xem chi phí và lựa chọn thời gian xử lý hồ sơ.</li>
-                            <li>Chờ cập nhật trạng thái sau khi nộp hồ sơ.</li>
-                        </ul>
-                    </article>
-
-                    <article class="pa-card pa-card--where">
-                        <h2 class="pa-card-title">Where</h2>
-                        <p class="pa-card-subtitle">Vấn đề xảy ra ở đâu?</p>
-                        <div class="pa-divider"></div>
-                        <ul class="pa-list">
-                            <li>Trang điền thông tin hồ sơ.</li>
-                            <li>Trang upload tài liệu.</li>
-                            <li>Trang chọn thời gian xử lý và thanh toán.</li>
-                            <li>Trang theo dõi trạng thái hồ sơ.</li>
-                        </ul>
-                    </article>
-
-                    <article class="pa-card pa-card--why">
-                        <h2 class="pa-card-title">Why</h2>
-                        <p class="pa-card-subtitle">Vì sao vấn đề này quan trọng?</p>
-                        <div class="pa-divider"></div>
-                        <ul class="pa-list">
-                            <li>Người dùng lo lắng vì sợ nộp sai giấy tờ.</li>
-                            <li>Thiếu minh bạch khiến mức độ tin tưởng vào nền tảng giảm.</li>
-                            <li>Người dùng phải thoát khỏi quy trình để kiểm tra lại thông tin.</li>
-                            <li>Làm giảm tỷ lệ hoàn tất hồ sơ và tăng yêu cầu hỗ trợ.</li>
-                        </ul>
-                    </article>
-
-                    <article class="pa-card pa-card--how">
-                        <h2 class="pa-card-title">How</h2>
-                        <p class="pa-card-subtitle">Vấn đề xảy ra như thế nào?</p>
-                        <div class="pa-divider"></div>
-                        <ul class="pa-list">
-                            <li>Người dùng phải tự tìm hiểu yêu cầu tài liệu từ nhiều nguồn khác nhau.</li>
-                            <li>Không có checklist rõ ràng trước khi upload.</li>
-                            <li>Quy trình đăng ký chưa có hướng dẫn từng bước rõ ràng.</li>
-                            <li>Người dùng không thấy tiến trình hồ sơ sau khi nộp.</li>
-                        </ul>
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!--Goad Statement-->
-        <section>
-            <div style="gap: 8px;" class="content-wrapper">
-                <h2 class="section-title">Goal Statement</h2>
-                <div class="gs-card">
-                    <!-- Left: title + icon -->
-                    <div class="gs-left">
-
-                        <svg class="gs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 227" fill="none"
-                            aria-hidden="true">
-                            <path
-                                d="M62.9136 0.254582C84.682 -1.24112 110.937 3.97444 130.822 12.725C138.636 16.1634 144.744 19.6948 152.06 23.8103C146.16 29.7468 139.786 35.8679 134.099 41.9315C128.364 38.9693 123.592 36.4084 117.578 33.9807C86.1393 21.3952 51.0195 21.707 19.8079 34.8493C-11.9492 48.248 -37.0684 73.7711 -49.9921 105.772C-62.9158 137.951 -62.4027 173.982 -48.5678 205.778C-34.7933 237.123 -9.24169 261.766 22.5479 274.366C54.3711 286.876 89.8453 286.251 121.206 272.62C152.768 258.847 177.578 233.076 190.171 200.979C203.318 167.256 201.401 132.686 187.04 99.818C185.471 96.3924 183.697 93.0634 181.735 89.8489C187.145 84.7792 194.813 77.1528 199.741 71.7355C213.486 91.8699 221.787 120.415 223.311 144.607C225.877 185.427 212.042 225.578 184.889 256.117C157.669 286.972 119.217 305.576 78.1718 307.759C38.0519 309.98 -1.34112 296.373 -31.5647 269.848C-62.5419 242.7 -81.3372 204.229 -83.7303 163.068C-86.144 122.326 -72.2827 82.295 -45.2027 51.8025C-16.8854 20.039 20.6521 2.62485 62.9136 0.254582Z"
-                                fill="white" />
-                            <path
-                                d="M68.9689 62.5027C86.9437 62.4007 102.271 66.9107 117.674 75.9706C111.455 81.7922 105.614 88.3099 99.4098 94.0576C97.7688 93.2684 96.1024 92.5333 94.4134 91.8535C77.8409 85.255 59.3205 85.5806 42.9894 92.7573C26.6723 99.9451 13.8864 113.348 7.45841 130.003C1.18351 146.403 1.56284 164.614 8.51569 180.737C15.6687 197.134 29.06 209.996 45.7167 216.463C62.2612 222.854 80.6607 222.403 96.8745 215.215C113.202 207.933 125.957 194.431 132.313 177.701C139.239 159.431 137.535 141.972 129.726 124.383C135.842 118.595 142.087 112.174 148.083 106.216C149.5 109.438 151.634 113.018 153.2 116.471C157.987 126.978 160.688 138.316 161.159 149.855C162.317 174.442 153.518 198.457 136.763 216.457C120.252 234.192 97.4006 244.648 73.2106 245.538C48.7292 246.464 24.8978 237.526 7.04637 220.717C-10.3528 204.311 -20.6312 181.72 -21.5786 157.801C-22.6197 133.139 -13.6579 109.104 3.26743 91.1645C20.8236 72.3968 43.5827 63.2937 68.9689 62.5027Z"
-                                fill="white" />
-                            <path
-                                d="M192.822 0.358398C193.426 1.25642 193.114 28.1498 193.102 30.5833C201.237 30.5727 216.468 30.9672 223.994 30.2123L183.972 70.2059C181.037 73.1507 167.569 87.0951 165.156 88.586C160.531 88.9435 153.206 88.7045 148.323 88.6867C143.38 92.9321 135.439 101.375 130.617 106.209L97.1392 139.765C106.731 160.541 94.1111 183.552 71.0582 184.77C65.9576 184.821 61.932 184.264 57.2231 182.127C49.7531 178.736 43.9224 172.527 41 164.852C38.2465 157.453 38.5811 148.109 41.9333 140.948C45.4349 133.508 51.7687 127.785 59.5162 125.061C68.1016 121.987 76.001 122.978 84.0894 126.799C95.4085 114.819 107.839 103.19 119.369 91.3634C123.966 86.6472 130.944 80.3238 135.07 75.4353C135.007 69.7333 134.992 64.0304 135.022 58.3278C139.902 52.9204 146.921 46.4725 152.143 41.1475C165.54 27.4869 179.543 14.1176 192.822 0.358398Z"
-                                fill="white" />
-                        </svg>
-                    </div>
-
-                    <!-- Right: quote -->
-                    <div class="gs-right">
-                        <div class="gs-quote">
-                            Nền tảng <strong>190 eVisa</strong> của chúng tôi sẽ cho phép người dùng hoàn tất quy trình
-                            đăng
-                            ký
-                            visa trực tuyến một cách dễ dàng thông qua hướng dẫn tài liệu rõ ràng, quy trình từng bước
-                            và
-                            khả
-                            năng theo dõi trạng thái hồ sơ, điều này sẽ đặc biệt hỗ trợ những người lần đầu đăng ký
-                            eVisa và
-                            tự
-                            thực hiện hồ sơ mà không thông qua các dịch vụ trung gian, bằng cách giảm sự mơ hồ về yêu
-                            cầu
-                            tài
-                            liệu, tăng mức độ tin cậy vào nền tảng và đơn giản hóa quy trình đăng ký; hiệu quả của giải
-                            pháp
-                            sẽ
-                            được đo lường thông qua <strong>tỷ lệ hoàn tất hồ sơ</strong> (completion rate), <strong>tỷ
-                                lệ
-                                rời
-                                bỏ trong quá trình đăng ký</strong> (drop-off rate) và <strong>số lượng yêu cầu hỗ trợ
-                                từ
-                                người
-                                dùng</strong>.
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- User Personas -->
-        <section>
-            <div style="gap: 8px;" class="content-wrapper">
-                <div class="section">
-                    <h2 class="section-title">User Personas</h2>
-                    <div class="section-body">
-                        <p>Từ các insight thu được trong quá trình nghiên cứu, bốn nhóm người dùng tiêu biểu đã được xác
-                            định để
-                            đại diện cho các hành vi và nhu cầu khác nhau trong quá trình xin eVisa.</p>
-                    </div>
-                </div>
-                <div class="personas-grid">
-                    <!-- Persona 1: Hong Nguyen -->
-                    <div class="persona-card persona-card--green">
-                        <div class="persona-sidebar">
-                            <div class="avatar">
-                                <img src="images/avatar-01.png" alt="Avatar">
-                            </div>
-                            <div class="persona-name">Hong Nguyen</div>
-                            <div class="persona-info">
-                                <div>Marketing Manager</div>
-                                <div>40 tuổi</div>
-                                <div class="flag">
-                                    <span class="label">Việt Nam</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="persona-content">
-                            <div class="persona-badge">
-                                <span class="icon-diamond"></span>
-                                <span>Khách du lịch cá nhân</span>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Context</div>
-                                <div class="section-text">
-                                    Hồng là một nhân viên văn phòng bận rộn đang lên kế hoạch cho chuyến du lịch ngắn
-                                    ngày
-                                    đến
-                                    Đài Loan. Cô có ít kinh nghiệm trong việc xin visa và mong muốn một quy trình nhanh
-                                    chóng,
-                                    đơn giản mà không cần phải đọc quá nhiều thông tin pháp lý phức tạp. Hồng thường sử
-                                    dụng
-                                    điện thoại di động để đăng ký các dịch vụ trực tuyến và cần hướng dẫn rõ ràng trong
-                                    từng
-                                    bước.
-                                </div>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Goal</div>
-                                <div class="list-item">
-                                    <div class="icon-check-circle"></div>
-                                    <div class="text">Hoàn thành hồ sơ xin visa nhanh chóng và dễ dàng.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-check-circle"></div>
-                                    <div class="text">Tránh các biểu mẫu phức tạp hoặc hướng dẫn khó hiểu.</div>
-                                </div>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Pain Points</div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Không chắc chắn về các loại tài liệu cần chuẩn bị.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Cảm thấy mệt mỏi với các biểu mẫu dài và phức tạp.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Khó theo dõi trạng thái xử lý hồ sơ visa.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Persona 2: Park Ji-Hoon -->
-                    <div class="persona-card persona-card--blue">
-                        <div class="persona-sidebar">
-                            <div class="avatar">
-                                <img src="images/avatar-02.png" alt="Avatar">
-                            </div>
-                            <div class="persona-name">Park Ji-Hoon</div>
-                            <div class="persona-info">
-                                <div>Sinh viên đại học</div>
-                                <div>24 tuổi</div>
-                                <div class="flag">
-                                    <span class="label">Hàn Quốc</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="persona-content">
-                            <div class="persona-badge">
-                                <span class="icon-diamond"></span>
-                                <span>Người lần đầu làm Visa</span>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Context</div>
-                                <div class="section-text">
-                                    Park Ji-Hoon chuẩn bị ra nước ngoài để tham gia chương trình trao đổi sinh viên và
-                                    đang
-                                    nộp
-                                    hồ sơ
-                                    xin visa lần đầu. Anh chưa quen với quy trình xin visa và cảm thấy các thuật ngữ
-                                    liên
-                                    quan
-                                    khá khó hiểu. Park Ji-Hoon lo lắng rằng việc điền sai thông tin có thể khiến hồ sơ
-                                    bị
-                                    chậm
-                                    xử lý
-                                    hoặc bị từ chối, trong khi bản thân và gia đình cũng không chắc chắn về các yêu cầu
-                                    cần
-                                    chuẩn bị.
-                                </div>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Goal</div>
-                                <div class="list-item">
-                                    <div class="icon-check-circle"></div>
-                                    <div class="text">Nhận được hướng dẫn rõ ràng và dễ hiểu trong quá trình đăng ký
-                                        visa.
-                                    </div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-check-circle"></div>
-                                    <div class="text">Đảm bảo hồ sơ chính xác trước khi nộp để tránh sai sót.</div>
-                                </div>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Pain Points</div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Cảm thấy quá tải khi các yêu cầu không được giải thích rõ ràng.
-                                    </div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Không chắc chắn tài liệu đã đáp ứng đúng tiêu chí hay chưa.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Bối rối với các thuật ngữ kỹ thuật trong quy trình xin visa.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Persona 3: Arjun Sharma -->
-                    <div class="persona-card persona-card--purple">
-                        <div class="persona-sidebar">
-                            <div class="avatar">
-                                <img src="images/avatar-03.png" alt="Avatar">
-                            </div>
-                            <div class="persona-name">Arjun Sharma</div>
-                            <div class="persona-info">
-                                <div>Chủ doanh nghiệp</div>
-                                <div>32 tuổi</div>
-                                <div class="flag">
-                                    <span class="label">Ấn Độ</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="persona-content">
-                            <div class="persona-badge">
-                                <span class="icon-diamond"></span>
-                                <span>Người cần visa gấp / công tác</span>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Context</div>
-                                <div class="section-text">
-                                    Arjun vừa được giao tham dự một cuộc họp kinh doanh quan trọng tại Dubai vào tuần
-                                    tới.
-                                    Anh
-                                    cần xin visa nhanh nhất có thể và sẵn sàng trả thêm phí cho dịch vụ xử lý nhanh.
-                                    Arjun
-                                    không
-                                    có nhiều thời gian để điền các biểu mẫu dài hoặc tìm hiểu các quy trình phức tạp.
-                                </div>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Goal</div>
-                                <div class="list-item">
-                                    <div class="icon-check-circle"></div>
-                                    <div class="text">Nhận được visa trong thời gian ngắn nhất có thể.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-check-circle"></div>
-                                    <div class="text">Tránh các bước không cần thiết và sự chậm trễ trong quy trình.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Pain Points</div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Không rõ thời gian xử lý visa cụ thể.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Cảm thấy khó chịu với quy trình xác minh dài và phức tạp.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Muốn có tùy chọn xử lý nhanh (fast-track) nhưng không dễ tìm thấy.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Persona 4: Sarah Wong -->
-                    <div class="persona-card persona-card--sky">
-                        <div class="persona-sidebar">
-                            <div class="avatar">
-                                <img src="images/avatar-04.png" alt="Avatar">
-                            </div>
-                            <div class="persona-name">Sarah Wong</div>
-                            <div class="persona-info">
-                                <div>HR Manager</div>
-                                <div>40 tuổi</div>
-                                <div class="flag">
-                                    <span class="label">Hồng Kông</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="persona-content">
-                            <div class="persona-badge">
-                                <span class="icon-diamond"></span>
-                                <span>Người quản lý nhiều hồ sơ visa</span>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Context</div>
-                                <div class="section-text">
-                                    Sarah chịu trách nhiệm xử lý nhiều hồ sơ xin visa cho nhân viên tham dự các hội nghị
-                                    ở
-                                    nước
-                                    ngoài. Cô gặp khó khăn khi phải quản lý nhiều đơn đăng ký cùng lúc và cần một quy
-                                    trình
-                                    hiệu
-                                    quả, đơn giản hơn. Sarah mong muốn có một bảng điều khiển để theo dõi trạng thái hồ
-                                    sơ
-                                    và
-                                    hạn chế việc nhập dữ liệu lặp lại.
-                                </div>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Goal</div>
-                                <div class="list-item">
-                                    <div class="icon-check-circle"></div>
-                                    <div class="text">Nộp nhiều hồ sơ xin visa cùng lúc.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-check-circle"></div>
-                                    <div class="text">Nhận cập nhật nhanh chóng về trạng thái xử lý hồ sơ.</div>
-                                </div>
-                            </div>
-
-                            <div class="section">
-                                <div class="section-title-card">Pain Points</div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Nhập dữ liệu thủ công tốn nhiều thời gian.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Khó theo dõi trạng thái của từng hồ sơ visa.</div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="icon-error-circle"></div>
-                                    <div class="text">Quá trình phê hồ sơ diễn ra chậm.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Customer Journey Map -->
-        <section>
-            <div style="gap: 8px;" class="content-wrapper">
-                <div class="detailed-journey-section">
-                    <div class="journey-header">
-                        <h2 class="section-title">Customer Journey Map</h2>
-                    </div>
-
-                    <!-- 👤Persona 1: Hong Nguyen - Individual Traveler -->
-                    <div class="h3-section">Persona 1: Hong Nguyen - Khách Du Lịch Cá Nhân</div>
-                    <div class="journey-cards-container">
-                        <!-- Card 1: Awareness -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge awareness">1. Nhận biết</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Tìm kiếm “Đài Loan eVisa” trên Google.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Nhiều quảng cáo từ các bên trung gian, khó tìm được website chính thức.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Tạo nội dung hướng dẫn, cải thiện thứ hạng SEO.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2: Consideration -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge consideration">2. Cân nhắc</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Xem review trên Trustpilot và so sánh
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không chắc chắn về độ uy tín của nền tảng trực tuyến 190evisa.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Hiển thị đánh giá khách hàng, chứng chỉ bảo mật và cam kết hoàn tiền.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3: Application -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge application">3. Nộp hồ sơ</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Hoàn thành đơn đăng ký evisa.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không chắc cần tải lên những tài liệu nào cho phù hợp với yêu cầu.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Cung cấp hướng dẫn tải tài liệu kèm ví dụ minh họa trực quan.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4: Processing -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge processing">4. Xử lý hồ sơ</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Kiểm tra email xem trạng thái hồ sơ.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không rõ hồ sơ đã nộp của mình đã được xử lý tới giai đoạn nào rồi.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Hiển thị trạng thái xử lý hồ sơ theo thời gian thực.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 5: Approval -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge approval">5. Phê duyệt</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Tải visa và chuẩn bị cho chuyến đi.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không biết cần làm gì sau khi visa được cấp.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Cung cấp hướng dẫn các bước tiếp theo trước khi nhập cảnh.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 👤 Persona 2: Ji-Hoon Park - First-Time Visa Applicant -->
-                    <div class="h3-section">Persona 2: Park Ji-Hoon – Người xin visa lần đầu</div>
-                    <div class="journey-cards-container">
-                        <!-- Card 1: Awareness -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge awareness">1. Nhận biết</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Hỏi bạn bè về cách xin visa, tìm thông tin trên Google.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không chắc website nào là cổng thông tin chính thức của chính phủ.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Xây dựng nội dung hướng dẫn rõ ràng, tối ưu SEO.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2: Consideration -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge consideration">2. Cân nhắc</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Đọc các hướng dẫn nhưng vẫn cảm thấy khó hiểu.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Nhiều thuật ngữ visa và yêu cầu giấy tờ phức tạp.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Sử dụng ngôn ngữ đơn giản hơn và bổ sung các minh họa trực quan để giải thích quy
-                                    trình.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3: Application -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge application">3. Nộp hồ sơ</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Điền các thông tin đăng ký evisa trên máy tính.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Lo lắng hồ sơ có thể bị từ chối do sai sót.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Thêm tính năng kiểm tra lỗi theo thời gian thực và checklist trước khi nộp hồ sơ.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4: Processing -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge processing">4. Xử lý hồ sơ</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Liên tục kiểm tra email để xem cập nhật trạng thái.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không có hệ thống theo dõi trạng thái rõ ràng.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Cung cấp trang theo dõi trạng thái hồ sơ trực tuyến.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 5: Approval -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge approval">5. Phê duyệt</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Nhận visa và gửi cho trường hoặc tổ chức liên quan.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không biết bước tiếp theo cần làm gì.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Hiển thị hướng dẫn rõ ràng về các bước tiếp theo sau khi visa được phê cấp.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 👤 Persona 3: Michael Brown - Urgent Visa Applicant -->
-                    <div class="h3-section">Persona 3: Michael Brown – Người cần visa gấp</div>
-
-                    <div class="journey-cards-container">
-                        <!-- Card 1: Awareness -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge awareness">1. Nhận biết</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Tìm kiếm “xử lý eVisa nhanh / express eVisa processing”.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không có thông tin rõ ràng về thời gian xử lý thực tế.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Hiển thị thời gian xử lý trung bình theo dữ liệu thực tế.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2: Consideration -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge consideration">2. Cân nhắc</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    So sánh các dịch vụ khác nhau để tìm phương án nhanh nhất.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không chắc dịch vụ xử lý nhanh có đáng với chi phí thêm hay không.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Hiển thị rõ thời gian xử lý và các gói dịch vụ.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3: Application -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge application">3. Nộp hồ sơ</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Chọn tùy chọn Express Visa.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không chắc hồ sơ sẽ được xử lý đúng thời gian.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp</div>
-                                <div class="journey-card-section-content">
-                                    Hiển thị ETA xử lý visa dựa trên dữ liệu xử lý theo thời gian thực.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4: Processing -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge processing">4. Xử lý hồ sơ</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Liên tục kiểm tra trạng thái hồ sơ.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Lo lắng về khả năng bị chậm trễ.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Cập nhật trạng thái hồ sơ theo thời gian thực kèm thời gian xử lý dự kiến.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 5: Approval -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge approval">5. Phê duyệt</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Nhận visa và chuẩn bị cho chuyến công tác.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không có hướng dẫn chuẩn bị trước chuyến đi.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Cung cấp checklist chuẩn bị trước khi nhập cảnh.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 👤 Persona 4: Sarah Wong - Business Visa Applicant -->
-                    <div class="h3-section">Persona 4: Sarah Wong - Quản lý hồ sơ visa doanh nghiệp</div>
-                    <div class="h4-section"><strong>Goal:</strong>Quản lý nhiều hồ sơ visa cùng lúc một cách hiệu quả.
-                    </div>
-
-                    <div class="journey-cards-container">
-                        <!-- Card 1: Awareness -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge awareness">1. Nhận biết</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Tìm nền tảng hỗ trợ xử lý nhiều hồ sơ visa.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Nhiều hệ thống chỉ hỗ trợ nộp từng hồ sơ.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Hỗ trợ nộp nhiều hồ sơ trong một lần.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2: Consideration -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge consideration">2. Cân nhắc</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    So sánh các dịch vụ visa cho doanh nghiệp.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Không có công cụ quản lý hồ sơ tập trung.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Cung cấp dashboard quản lý hồ sơ.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3: Application -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge application">3. Nộp hồ sơ</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Nhập thông tin cho nhiều nhân viên.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Nhập dữ liệu lặp lại nhiều lần.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Tự động điền dữ liệu từ hồ sơ trước đó.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4: Processing -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge processing">4. Xử lý hồ sơ</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Theo dõi trạng thái visa của nhiều người.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Khó theo dõi trạng thái từng hồ sơ.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Dashboard hiển thị trạng thái của tất cả hồ sơ.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 5: Approval -->
-                        <div class="journey-card">
-                            <span class="journey-card-badge approval">5. Phê duyệt</span>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Hành động</div>
-                                <div class="journey-card-section-content">
-                                    Nhận visa và gửi cho nhân viên.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Pain Points</div>
-                                <div class="journey-card-section-content">
-                                    Quản lý tài liệu visa khó khăn.
-                                </div>
-                            </div>
-
-                            <div class="journey-card-section">
-                                <div class="journey-card-section-title">Giải pháp UX/UI</div>
-                                <div class="journey-card-section-content">
-                                    Lưu trữ visa và tài liệu trong hệ thống quản lý hồ sơ.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </section>
 
-    <!-------------------------------------------------------------------------------------------------->
-    
-    <!--Ideate-->
+    <!--Define 5w-h-->
     <section>
+        <div style="gap: 8px;" class="content-wrapper">
+
+            <!-- Page title -->
+            <div class="section">
+                <h2 class="section-title">Define – Problem Analysis (5W-H)</h2>
+                <div class="section-body">
+                    <p>Thông qua phương pháp 5W-H, các vấn đề được phân tích theo nhiều góc độ để hiểu rõ ai bị ảnh
+                        hưởng,
+                        vấn đề xảy ra khi nào, ở đâu và vì sao, từ đó làm cơ sở cho việc đề xuất giải pháp UX ở các
+                        bước
+                        tiếp theo.</p>
+                </div>
+            </div>
+
+            <div class="pa-grid">
+
+                <article class="pa-card pa-card--who">
+                    <h2 class="pa-card-title">Who</h2>
+                    <p class="pa-card-subtitle">Ai là người bị ảnh hưởng?</p>
+                    <div class="pa-divider"></div>
+                    <ul class="pa-list">
+                        <li>Khách du lịch cá nhân lần đầu đăng ký eVisa online.</li>
+                        <li>Người tự thực hiện hồ sơ không thông qua agency.</li>
+                        <li>Người cần visa gấp và muốn hoàn tất quy trình nhanh.</li>
+                        <li>Người chưa quen với yêu cầu tài liệu và quy trình visa điện tử.</li>
+                    </ul>
+                </article>
+
+                <article class="pa-card pa-card--what">
+                    <h2 class="pa-card-title">What</h2>
+                    <p class="pa-card-subtitle">Vấn đề chính là gì?</p>
+                    <div class="pa-divider"></div>
+                    <ul class="pa-list">
+                        <li>Người dùng không rõ cần chuẩn bị những tài liệu nào khi upload.</li>
+                        <li>Thiếu hiển thị trạng thái hồ sơ sau khi nộp.</li>
+                        <li>Chi phí dịch vụ và cấu trúc giá chưa đủ minh bạch.</li>
+                        <li>Quy trình form dài và nhiều bước gây quá tải nhận thức.</li>
+                    </ul>
+                </article>
+
+                <article class="pa-card pa-card--when">
+                    <h2 class="pa-card-title">When</h2>
+                    <p class="pa-card-subtitle">Khi nào vấn đề xảy ra?</p>
+                    <div class="pa-divider"></div>
+                    <ul class="pa-list">
+                        <li>Điền thông tin hồ sơ visa.</li>
+                        <li>Chuẩn bị và upload tài liệu.</li>
+                        <li>Xem chi phí và lựa chọn thời gian xử lý hồ sơ.</li>
+                        <li>Chờ cập nhật trạng thái sau khi nộp hồ sơ.</li>
+                    </ul>
+                </article>
+
+                <article class="pa-card pa-card--where">
+                    <h2 class="pa-card-title">Where</h2>
+                    <p class="pa-card-subtitle">Vấn đề xảy ra ở đâu?</p>
+                    <div class="pa-divider"></div>
+                    <ul class="pa-list">
+                        <li>Trang điền thông tin hồ sơ.</li>
+                        <li>Trang upload tài liệu.</li>
+                        <li>Trang chọn thời gian xử lý và thanh toán.</li>
+                        <li>Trang theo dõi trạng thái hồ sơ.</li>
+                    </ul>
+                </article>
+
+                <article class="pa-card pa-card--why">
+                    <h2 class="pa-card-title">Why</h2>
+                    <p class="pa-card-subtitle">Vì sao vấn đề này quan trọng?</p>
+                    <div class="pa-divider"></div>
+                    <ul class="pa-list">
+                        <li>Người dùng lo lắng vì sợ nộp sai giấy tờ.</li>
+                        <li>Thiếu minh bạch khiến mức độ tin tưởng vào nền tảng giảm.</li>
+                        <li>Người dùng phải thoát khỏi quy trình để kiểm tra lại thông tin.</li>
+                        <li>Làm giảm tỷ lệ hoàn tất hồ sơ và tăng yêu cầu hỗ trợ.</li>
+                    </ul>
+                </article>
+
+                <article class="pa-card pa-card--how">
+                    <h2 class="pa-card-title">How</h2>
+                    <p class="pa-card-subtitle">Vấn đề xảy ra như thế nào?</p>
+                    <div class="pa-divider"></div>
+                    <ul class="pa-list">
+                        <li>Người dùng phải tự tìm hiểu yêu cầu tài liệu từ nhiều nguồn khác nhau.</li>
+                        <li>Không có checklist rõ ràng trước khi upload.</li>
+                        <li>Quy trình đăng ký chưa có hướng dẫn từng bước rõ ràng.</li>
+                        <li>Người dùng không thấy tiến trình hồ sơ sau khi nộp.</li>
+                    </ul>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Goad Statement-->
+    <section>
+        <div style="gap: 8px;" class="content-wrapper">
+            <h2 class="section-title">Goal Statement</h2>
+            <div class="gs-card">
+                <!-- Left: title + icon -->
+                <div class="gs-left">
+
+                    <svg class="gs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 227" fill="none"
+                        aria-hidden="true">
+                        <path
+                            d="M62.9136 0.254582C84.682 -1.24112 110.937 3.97444 130.822 12.725C138.636 16.1634 144.744 19.6948 152.06 23.8103C146.16 29.7468 139.786 35.8679 134.099 41.9315C128.364 38.9693 123.592 36.4084 117.578 33.9807C86.1393 21.3952 51.0195 21.707 19.8079 34.8493C-11.9492 48.248 -37.0684 73.7711 -49.9921 105.772C-62.9158 137.951 -62.4027 173.982 -48.5678 205.778C-34.7933 237.123 -9.24169 261.766 22.5479 274.366C54.3711 286.876 89.8453 286.251 121.206 272.62C152.768 258.847 177.578 233.076 190.171 200.979C203.318 167.256 201.401 132.686 187.04 99.818C185.471 96.3924 183.697 93.0634 181.735 89.8489C187.145 84.7792 194.813 77.1528 199.741 71.7355C213.486 91.8699 221.787 120.415 223.311 144.607C225.877 185.427 212.042 225.578 184.889 256.117C157.669 286.972 119.217 305.576 78.1718 307.759C38.0519 309.98 -1.34112 296.373 -31.5647 269.848C-62.5419 242.7 -81.3372 204.229 -83.7303 163.068C-86.144 122.326 -72.2827 82.295 -45.2027 51.8025C-16.8854 20.039 20.6521 2.62485 62.9136 0.254582Z"
+                            fill="white" />
+                        <path
+                            d="M68.9689 62.5027C86.9437 62.4007 102.271 66.9107 117.674 75.9706C111.455 81.7922 105.614 88.3099 99.4098 94.0576C97.7688 93.2684 96.1024 92.5333 94.4134 91.8535C77.8409 85.255 59.3205 85.5806 42.9894 92.7573C26.6723 99.9451 13.8864 113.348 7.45841 130.003C1.18351 146.403 1.56284 164.614 8.51569 180.737C15.6687 197.134 29.06 209.996 45.7167 216.463C62.2612 222.854 80.6607 222.403 96.8745 215.215C113.202 207.933 125.957 194.431 132.313 177.701C139.239 159.431 137.535 141.972 129.726 124.383C135.842 118.595 142.087 112.174 148.083 106.216C149.5 109.438 151.634 113.018 153.2 116.471C157.987 126.978 160.688 138.316 161.159 149.855C162.317 174.442 153.518 198.457 136.763 216.457C120.252 234.192 97.4006 244.648 73.2106 245.538C48.7292 246.464 24.8978 237.526 7.04637 220.717C-10.3528 204.311 -20.6312 181.72 -21.5786 157.801C-22.6197 133.139 -13.6579 109.104 3.26743 91.1645C20.8236 72.3968 43.5827 63.2937 68.9689 62.5027Z"
+                            fill="white" />
+                        <path
+                            d="M192.822 0.358398C193.426 1.25642 193.114 28.1498 193.102 30.5833C201.237 30.5727 216.468 30.9672 223.994 30.2123L183.972 70.2059C181.037 73.1507 167.569 87.0951 165.156 88.586C160.531 88.9435 153.206 88.7045 148.323 88.6867C143.38 92.9321 135.439 101.375 130.617 106.209L97.1392 139.765C106.731 160.541 94.1111 183.552 71.0582 184.77C65.9576 184.821 61.932 184.264 57.2231 182.127C49.7531 178.736 43.9224 172.527 41 164.852C38.2465 157.453 38.5811 148.109 41.9333 140.948C45.4349 133.508 51.7687 127.785 59.5162 125.061C68.1016 121.987 76.001 122.978 84.0894 126.799C95.4085 114.819 107.839 103.19 119.369 91.3634C123.966 86.6472 130.944 80.3238 135.07 75.4353C135.007 69.7333 134.992 64.0304 135.022 58.3278C139.902 52.9204 146.921 46.4725 152.143 41.1475C165.54 27.4869 179.543 14.1176 192.822 0.358398Z"
+                            fill="white" />
+                    </svg>
+                </div>
+
+                <!-- Right: quote -->
+                <div class="gs-right">
+                    <div class="gs-quote">
+                        Nền tảng <strong>190 eVisa</strong> của chúng tôi sẽ cho phép người dùng hoàn tất quy trình
+                        đăng
+                        ký
+                        visa trực tuyến một cách dễ dàng thông qua hướng dẫn tài liệu rõ ràng, quy trình từng bước
+                        và
+                        khả
+                        năng theo dõi trạng thái hồ sơ, điều này sẽ đặc biệt hỗ trợ những người lần đầu đăng ký
+                        eVisa và
+                        tự
+                        thực hiện hồ sơ mà không thông qua các dịch vụ trung gian, bằng cách giảm sự mơ hồ về yêu
+                        cầu
+                        tài
+                        liệu, tăng mức độ tin cậy vào nền tảng và đơn giản hóa quy trình đăng ký; hiệu quả của giải
+                        pháp
+                        sẽ
+                        được đo lường thông qua <strong>tỷ lệ hoàn tất hồ sơ</strong> (completion rate), <strong>tỷ
+                            lệ
+                            rời
+                            bỏ trong quá trình đăng ký</strong> (drop-off rate) và <strong>số lượng yêu cầu hỗ trợ
+                            từ
+                            người
+                            dùng</strong>.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- User Personas -->
+    <section>
+        <div style="gap: 8px;" class="content-wrapper">
+            <div class="section">
+                <h2 class="section-title">User Personas</h2>
+                <div class="section-body">
+                    <p>Từ các insight thu được trong quá trình nghiên cứu, bốn nhóm người dùng tiêu biểu đã được xác
+                        định để
+                        đại diện cho các hành vi và nhu cầu khác nhau trong quá trình xin eVisa.</p>
+                </div>
+            </div>
+            <div class="personas-grid">
+                <!-- Persona 1: Hong Nguyen -->
+                <div class="persona-card persona-card--green">
+                    <div class="persona-sidebar">
+                        <div class="avatar">
+                            <img src="images/avatar-01.png" alt="Avatar">
+                        </div>
+                        <div class="persona-name">Hong Nguyen</div>
+                        <div class="persona-info">
+                            <div>Marketing Manager</div>
+                            <div>40 tuổi</div>
+                            <div class="flag">
+                                <span class="label">Việt Nam</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="persona-content">
+                        <div class="persona-badge">
+                            <span class="icon-diamond"></span>
+                            <span>Khách du lịch cá nhân</span>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Context</div>
+                            <div class="section-text">
+                                Hồng là một nhân viên văn phòng bận rộn đang lên kế hoạch cho chuyến du lịch ngắn
+                                ngày
+                                đến
+                                Đài Loan. Cô có ít kinh nghiệm trong việc xin visa và mong muốn một quy trình nhanh
+                                chóng,
+                                đơn giản mà không cần phải đọc quá nhiều thông tin pháp lý phức tạp. Hồng thường sử
+                                dụng
+                                điện thoại di động để đăng ký các dịch vụ trực tuyến và cần hướng dẫn rõ ràng trong
+                                từng
+                                bước.
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Goal</div>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Hoàn thành hồ sơ xin visa nhanh chóng và dễ dàng.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Tránh các biểu mẫu phức tạp hoặc hướng dẫn khó hiểu.</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Pain Points</div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Không chắc chắn về các loại tài liệu cần chuẩn bị.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Cảm thấy mệt mỏi với các biểu mẫu dài và phức tạp.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Khó theo dõi trạng thái xử lý hồ sơ visa.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Persona 2: Park Ji-Hoon -->
+                <div class="persona-card persona-card--blue">
+                    <div class="persona-sidebar">
+                        <div class="avatar">
+                            <img src="images/avatar-02.png" alt="Avatar">
+                        </div>
+                        <div class="persona-name">Park Ji-Hoon</div>
+                        <div class="persona-info">
+                            <div>Sinh viên đại học</div>
+                            <div>24 tuổi</div>
+                            <div class="flag">
+                                <span class="label">Hàn Quốc</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="persona-content">
+                        <div class="persona-badge">
+                            <span class="icon-diamond"></span>
+                            <span>Người lần đầu làm Visa</span>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Context</div>
+                            <div class="section-text">
+                                Park Ji-Hoon chuẩn bị ra nước ngoài để tham gia chương trình trao đổi sinh viên và
+                                đang
+                                nộp
+                                hồ sơ
+                                xin visa lần đầu. Anh chưa quen với quy trình xin visa và cảm thấy các thuật ngữ
+                                liên
+                                quan
+                                khá khó hiểu. Park Ji-Hoon lo lắng rằng việc điền sai thông tin có thể khiến hồ sơ
+                                bị
+                                chậm
+                                xử lý
+                                hoặc bị từ chối, trong khi bản thân và gia đình cũng không chắc chắn về các yêu cầu
+                                cần
+                                chuẩn bị.
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Goal</div>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Nhận được hướng dẫn rõ ràng và dễ hiểu trong quá trình đăng ký
+                                    visa.
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Đảm bảo hồ sơ chính xác trước khi nộp để tránh sai sót.</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Pain Points</div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Cảm thấy quá tải khi các yêu cầu không được giải thích rõ ràng.
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Không chắc chắn tài liệu đã đáp ứng đúng tiêu chí hay chưa.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Bối rối với các thuật ngữ kỹ thuật trong quy trình xin visa.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Persona 3: Arjun Sharma -->
+                <div class="persona-card persona-card--purple">
+                    <div class="persona-sidebar">
+                        <div class="avatar">
+                            <img src="images/avatar-03.png" alt="Avatar">
+                        </div>
+                        <div class="persona-name">Arjun Sharma</div>
+                        <div class="persona-info">
+                            <div>Chủ doanh nghiệp</div>
+                            <div>32 tuổi</div>
+                            <div class="flag">
+                                <span class="label">Ấn Độ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="persona-content">
+                        <div class="persona-badge">
+                            <span class="icon-diamond"></span>
+                            <span>Người cần visa gấp / công tác</span>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Context</div>
+                            <div class="section-text">
+                                Arjun vừa được giao tham dự một cuộc họp kinh doanh quan trọng tại Dubai vào tuần
+                                tới.
+                                Anh
+                                cần xin visa nhanh nhất có thể và sẵn sàng trả thêm phí cho dịch vụ xử lý nhanh.
+                                Arjun
+                                không
+                                có nhiều thời gian để điền các biểu mẫu dài hoặc tìm hiểu các quy trình phức tạp.
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Goal</div>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Nhận được visa trong thời gian ngắn nhất có thể.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Tránh các bước không cần thiết và sự chậm trễ trong quy trình.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Pain Points</div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Không rõ thời gian xử lý visa cụ thể.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Cảm thấy khó chịu với quy trình xác minh dài và phức tạp.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Muốn có tùy chọn xử lý nhanh (fast-track) nhưng không dễ tìm thấy.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Persona 4: Sarah Wong -->
+                <div class="persona-card persona-card--sky">
+                    <div class="persona-sidebar">
+                        <div class="avatar">
+                            <img src="images/avatar-04.png" alt="Avatar">
+                        </div>
+                        <div class="persona-name">Sarah Wong</div>
+                        <div class="persona-info">
+                            <div>HR Manager</div>
+                            <div>40 tuổi</div>
+                            <div class="flag">
+                                <span class="label">Hồng Kông</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="persona-content">
+                        <div class="persona-badge">
+                            <span class="icon-diamond"></span>
+                            <span>Người quản lý nhiều hồ sơ visa</span>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Context</div>
+                            <div class="section-text">
+                                Sarah chịu trách nhiệm xử lý nhiều hồ sơ xin visa cho nhân viên tham dự các hội nghị
+                                ở
+                                nước
+                                ngoài. Cô gặp khó khăn khi phải quản lý nhiều đơn đăng ký cùng lúc và cần một quy
+                                trình
+                                hiệu
+                                quả, đơn giản hơn. Sarah mong muốn có một bảng điều khiển để theo dõi trạng thái hồ
+                                sơ
+                                và
+                                hạn chế việc nhập dữ liệu lặp lại.
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Goal</div>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Nộp nhiều hồ sơ xin visa cùng lúc.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-check-circle"></div>
+                                <div class="text">Nhận cập nhật nhanh chóng về trạng thái xử lý hồ sơ.</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-card">Pain Points</div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Nhập dữ liệu thủ công tốn nhiều thời gian.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Khó theo dõi trạng thái của từng hồ sơ visa.</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="icon-error-circle"></div>
+                                <div class="text">Quá trình phê hồ sơ diễn ra chậm.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Journey Map -->
+    <section>
+        <div style="gap: 8px;" class="content-wrapper">
+            <div class="detailed-journey-section">
+                <div class="journey-header">
+                    <h2 class="section-title">Customer Journey Map</h2>
+                </div>
+
+                <!-- 👤Persona 1: Hong Nguyen - Individual Traveler -->
+                <div class="h3-section">Persona 1: Hong Nguyen - Khách Du Lịch Cá Nhân</div>
+                <div class="journey-cards-container">
+                    <!-- Card 1: Awareness -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge awareness">1. Nhận biết</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Tìm kiếm “Đài Loan eVisa” trên Google.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Nhiều quảng cáo từ các bên trung gian, khó tìm được website chính thức.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Tạo nội dung hướng dẫn, cải thiện thứ hạng SEO.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Consideration -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge consideration">2. Cân nhắc</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Xem review trên Trustpilot và so sánh
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không chắc chắn về độ uy tín của nền tảng trực tuyến 190evisa.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Hiển thị đánh giá khách hàng, chứng chỉ bảo mật và cam kết hoàn tiền.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Application -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge application">3. Nộp hồ sơ</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Hoàn thành đơn đăng ký evisa.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không chắc cần tải lên những tài liệu nào cho phù hợp với yêu cầu.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Cung cấp hướng dẫn tải tài liệu kèm ví dụ minh họa trực quan.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Processing -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge processing">4. Xử lý hồ sơ</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Kiểm tra email xem trạng thái hồ sơ.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không rõ hồ sơ đã nộp của mình đã được xử lý tới giai đoạn nào rồi.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Hiển thị trạng thái xử lý hồ sơ theo thời gian thực.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Approval -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge approval">5. Phê duyệt</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Tải visa và chuẩn bị cho chuyến đi.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không biết cần làm gì sau khi visa được cấp.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Cung cấp hướng dẫn các bước tiếp theo trước khi nhập cảnh.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 👤 Persona 2: Ji-Hoon Park - First-Time Visa Applicant -->
+                <div class="h3-section">Persona 2: Park Ji-Hoon – Người xin visa lần đầu</div>
+                <div class="journey-cards-container">
+                    <!-- Card 1: Awareness -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge awareness">1. Nhận biết</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Hỏi bạn bè về cách xin visa, tìm thông tin trên Google.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không chắc website nào là cổng thông tin chính thức của chính phủ.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Xây dựng nội dung hướng dẫn rõ ràng, tối ưu SEO.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Consideration -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge consideration">2. Cân nhắc</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Đọc các hướng dẫn nhưng vẫn cảm thấy khó hiểu.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Nhiều thuật ngữ visa và yêu cầu giấy tờ phức tạp.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Sử dụng ngôn ngữ đơn giản hơn và bổ sung các minh họa trực quan để giải thích quy
+                                trình.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Application -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge application">3. Nộp hồ sơ</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Điền các thông tin đăng ký evisa trên máy tính.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Lo lắng hồ sơ có thể bị từ chối do sai sót.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Thêm tính năng kiểm tra lỗi theo thời gian thực và checklist trước khi nộp hồ sơ.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Processing -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge processing">4. Xử lý hồ sơ</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Liên tục kiểm tra email để xem cập nhật trạng thái.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không có hệ thống theo dõi trạng thái rõ ràng.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Cung cấp trang theo dõi trạng thái hồ sơ trực tuyến.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Approval -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge approval">5. Phê duyệt</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Nhận visa và gửi cho trường hoặc tổ chức liên quan.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không biết bước tiếp theo cần làm gì.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Hiển thị hướng dẫn rõ ràng về các bước tiếp theo sau khi visa được phê cấp.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 👤 Persona 3: Michael Brown - Urgent Visa Applicant -->
+                <div class="h3-section">Persona 3: Michael Brown – Người cần visa gấp</div>
+
+                <div class="journey-cards-container">
+                    <!-- Card 1: Awareness -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge awareness">1. Nhận biết</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Tìm kiếm “xử lý eVisa nhanh / express eVisa processing”.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không có thông tin rõ ràng về thời gian xử lý thực tế.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Hiển thị thời gian xử lý trung bình theo dữ liệu thực tế.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Consideration -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge consideration">2. Cân nhắc</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                So sánh các dịch vụ khác nhau để tìm phương án nhanh nhất.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không chắc dịch vụ xử lý nhanh có đáng với chi phí thêm hay không.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Hiển thị rõ thời gian xử lý và các gói dịch vụ.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Application -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge application">3. Nộp hồ sơ</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Chọn tùy chọn Express Visa.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không chắc hồ sơ sẽ được xử lý đúng thời gian.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp</div>
+                            <div class="journey-card-section-content">
+                                Hiển thị ETA xử lý visa dựa trên dữ liệu xử lý theo thời gian thực.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Processing -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge processing">4. Xử lý hồ sơ</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Liên tục kiểm tra trạng thái hồ sơ.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Lo lắng về khả năng bị chậm trễ.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Cập nhật trạng thái hồ sơ theo thời gian thực kèm thời gian xử lý dự kiến.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Approval -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge approval">5. Phê duyệt</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Nhận visa và chuẩn bị cho chuyến công tác.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không có hướng dẫn chuẩn bị trước chuyến đi.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Cung cấp checklist chuẩn bị trước khi nhập cảnh.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 👤 Persona 4: Sarah Wong - Business Visa Applicant -->
+                <div class="h3-section">Persona 4: Sarah Wong - Quản lý hồ sơ visa doanh nghiệp</div>
+                <div class="h4-section"><strong>Goal:</strong>Quản lý nhiều hồ sơ visa cùng lúc một cách hiệu quả.
+                </div>
+
+                <div class="journey-cards-container">
+                    <!-- Card 1: Awareness -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge awareness">1. Nhận biết</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Tìm nền tảng hỗ trợ xử lý nhiều hồ sơ visa.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Nhiều hệ thống chỉ hỗ trợ nộp từng hồ sơ.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Hỗ trợ nộp nhiều hồ sơ trong một lần.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Consideration -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge consideration">2. Cân nhắc</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                So sánh các dịch vụ visa cho doanh nghiệp.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Không có công cụ quản lý hồ sơ tập trung.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Cung cấp dashboard quản lý hồ sơ.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Application -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge application">3. Nộp hồ sơ</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Nhập thông tin cho nhiều nhân viên.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Nhập dữ liệu lặp lại nhiều lần.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Tự động điền dữ liệu từ hồ sơ trước đó.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Processing -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge processing">4. Xử lý hồ sơ</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Theo dõi trạng thái visa của nhiều người.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Khó theo dõi trạng thái từng hồ sơ.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Dashboard hiển thị trạng thái của tất cả hồ sơ.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Approval -->
+                    <div class="journey-card">
+                        <span class="journey-card-badge approval">5. Phê duyệt</span>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Hành động</div>
+                            <div class="journey-card-section-content">
+                                Nhận visa và gửi cho nhân viên.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Pain Points</div>
+                            <div class="journey-card-section-content">
+                                Quản lý tài liệu visa khó khăn.
+                            </div>
+                        </div>
+
+                        <div class="journey-card-section">
+                            <div class="journey-card-section-title">Giải pháp UX/UI</div>
+                            <div class="journey-card-section-content">
+                                Lưu trữ visa và tài liệu trong hệ thống quản lý hồ sơ.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!----------------------------------Ideate------------------------------------------------------>
+    <section id="ideate">
         <!--Title Section-->
         <section>
             <div>
@@ -1606,65 +1643,88 @@
                     <img src="images/blob-orange.png" alt="" class="strategy-blob">
                     <div class="strategy-container">
                         <div class="strategy-card">
-                            <h3>Tăng cường<br>độ tin cậy và tính minh bạch</h3>
+                            <h3 data-number="1">Tăng cường<br>độ tin cậy và tính minh bạch</h3>
                             <ul>
-                                <li>Hiển thị <strong>đánh giá người dùng đã xác minh</strong> và tích hợp các nền tảng
-                                    review
+                                <li>Hiển thị <strong style="color: var(--color-text-neutral-strong);">User
+                                        Verified</strong> và tích hợp các nền tảng review
                                     như Trustpilot, tương tự như iVisa và Atlys.
                                 </li>
-                                <li>Bổ sung <strong>chứng nhận đối tác chính phủ và các badge tuân thủ</strong> để củng
-                                    cố
-                                    độ
-                                    tin cậy của nền tảng.</li>
-                            </ul>
-                        </div>
-
-                        <div class="strategy-card">
-                            <h3>Cải thiện<br>trải nghiệm quy trình đăng ký</h3>
-                            <ul>
-                                <li>Cung cấp <strong>hướng dẫn upload tài liệu theo từng bước</strong>, tương tự như
-                                    cách
-                                    Atlys
-                                    hỗ trợ người dùng trong quá trình nộp hồ sơ.</li>
-                                <li>Giới thiệu <strong>ước tính thời gian xử lý hồ sơ dự đoán</strong>, tương tự như
-                                    tính
-                                    năng
-                                    dự đoán phê duyệt bằng AI của Atlys.
+                                <li>Bổ sung <strong style="color: var(--color-text-neutral-strong);"> các badge tuân
+                                        thủ</strong> để củng cố độ
+                                    tin cậy của nền tảng (nếu có).</li>
+                                <li>Hiển thị phí dịch vụ ngay từ đầu quy trình thay vì chỉ xuất hiện ở bước thanh toán.
                                 </li>
+                                <li>Cho người dùng biết thời gian xử lý visa dự kiến theo từng quốc gia.</li>
                             </ul>
                         </div>
 
                         <div class="strategy-card">
-                            <h3>Mở rộng<br>kênh hỗ trợ và giao tiếp</h3>
+                            <h3 data-number="2">Đơn giản hoá<br>quy trình đăng ký</h3>
                             <ul>
-                                <li>Cung cấp <strong>chat hỗ trợ theo thời gian thực</strong> và cập nhật trạng thái tự
-                                    động
-                                    qua
-                                    <strong>WhatsApp hoặc SMS</strong> để cải thiện tốc độ phản hồi.
-                                </li>
-                                <li>Triển khai <strong>trợ lý hỗ trợ khách hàng bằng AI</strong> để giải đáp các câu hỏi
-                                    phổ
-                                    biến, tương tự như Atlys.</li>
+                                <li>Chia thành các bước nhỏ theo step-by-step thay vì hiển thị toàn bộ form trên một
+                                    trang.</li>
+                                <li>Nhóm các trường thông tin liên quan để form rõ ràng hơn.</li>
+                                <li>Loại bỏ các trường không cần thiết để biểu mẫu đơn giản hơn.</li>
+                                <li>Hiển thị gợi ý và cảnh báo lỗi ngay khi người dùng nhập liệu.</li>
                             </ul>
                         </div>
 
                         <div class="strategy-card">
-                            <h3>Nâng cao khả năng tiếp cận<br> và nhận thức của người dùng</h3>
+                            <h3 data-number="3">Cải thiện<br>trải nghiệm tải tài liệu</h3>
                             <ul>
-                                <li>Phát triển nội dung hướng dẫn như <strong>“Cách nhận biết website visa chính
-                                        thức”</strong>
-                                    để giúp người
-                                    dùng tránh nhầm lẫn giữa website chính phủ và các nền tảng dịch vụ trung gian.</li>
-                                <li>Bổ sung <strong>chứng nhận đối tác chính phủ và các badge tuân thủ</strong> nhằm
-                                    tăng
-                                    mức độ
-                                    tin cậy của nền tảng.</li>
+                                <li>Cung cấp checklist tài liệu cần chuẩn bị trước khi bắt đầu đăng ký.</li>
+                                <li>Hiển thị ví dụ trực quan cho từng loại tài liệu.</li>
+                                <li>Cho phép xem trước tài liệu trước khi nộp.</li>
+                                <li>Tự động kiểm tra định dạng và kích thước file khi upload.</li>
+                            </ul>
+                        </div>
+
+                        <div class="strategy-card">
+                            <h3 data-number="4">Minh bạch<br>trạng thái xử lý hồ sơ</h3>
+                            <ul>
+                                <li>Cho phép người dùng theo dõi tiến trình xử lý hồ sơ.</li>
+                                <li>Hiển thị Estimated processing time cho từng hồ sơ.</li>
+                                <li>Gửi thông báo cập nhật trạng thái qua email hoặc SMS.</li>
+                                <li>Hiển thị lý do khi hồ sơ bị thiếu thông tin hoặc cần bổ sung tài liệu.</li>
+                            </ul>
+                        </div>
+
+                        <div class="strategy-card">
+                            <h3 data-number="5">Tăng cường hỗ trợ người dùng<br>trong quá trình đăng ký</h3>
+                            <ul>
+                                <li>Thêm tooltip hướng dẫn cho các trường thông tin.</li>
+                                <li>Hướng dẫn người dùng từng bước khi đăng ký.</li>
+                                <li>Thêm chat hỗ trợ hoặc trợ lý AI.</li>
+                                <li>Cho phép user lưu hồ sơ và tiếp tục hoàn thành sau.</li>
+                            </ul>
+                        </div>
+
+                        <div class="strategy-card">
+                            <h3 data-number="6">Tối ưu trải nghiệm<br>trên thiết bị di động</h3>
+                            <ul>
+                                <li>Tối ưu form nhập liệu cho màn hình nhỏ.</li>
+                                <li>Sử dụng input phù hợp với từng loại data (date picker, country selector…).</li>
+                                <li>Giảm chiều dài trang bằng cách chia ra từng bước.</li>
+                                <li>Cải thiện trải nghiệm upload tài liệu từ điện thoại.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+    </section>
+
+    <!----------------------------------Information Architecture------------------------------------>
+    <section id="ia">
+        <!--Title Section-->
+        <section>
+            <div>
+                <div class="block-title">
+                    <h2>Information Architecture</h2>
+                </div>
+            </div>
+        </section>
+
         <!--Sitemap-->
         <section>
             <div style="gap: 8px;" class="content-wrapper">
@@ -1710,7 +1770,7 @@
                                         <div class="sm-line-v sm-line-v--med"></div>
                                         <div class="sm-page">Fill in details</div>
                                         <div class="sm-line-v sm-line-v--med"></div>
-                                        <div class="sm-page">Upload docs.</div>
+                                        <div class="sm-page">Upload docs</div>
                                         <div class="sm-line-v sm-line-v--med"></div>
                                         <div class="sm-page">Payment</div>
                                     </div>
@@ -1820,32 +1880,34 @@
                 </div>
             </div>
         </section>
+
+        <!--User Flow-->
+        <section>
+            <div style="gap: 8px;" class="content-wrapper">
+                <div class="section">
+                    <h2 class="section-title">User Flow</h2>
+                    <div class="flow-container">
+                        <img src="images/process-flow.svg" alt="Visa Application Flow" class="flow-svg">
+                    </div>
+                </div>
+            </div>
+            <div class="journey-section">
+                <div class="journey-header">
+                    <h2 class="h2-section">1. User Research & Analysis</h2>
+                </div>
+            </div>
+        </section>
     </section>
 
-
-    <div class="process-flow">
-        <div class="journey-header">
-            <h2 class="h2-section">9. User flow for 190evisa</h2>
-        </div>
-        <div class="flow-container">
-            <img src="images/process-flow.svg" alt="Visa Application Flow" class="flow-svg">
-        </div>
-    </div>
-    </div>
-    <div class="journey-section">
-        <div class="journey-header">
-            <h2 class="h2-section">1. User Research & Analysis</h2>
-        </div>
-
-        <!-- Format cursor
+    <!-- Format cursor
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div> -->
-        <!-- GSAP core -->
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-        <!-- ScrollTrigger plugin -->
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-        <!-- Smooth scroll -->
-        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- GSAP core -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <!-- Smooth scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
-        <script src="animations.js"></script>
+    <script src="animations.js"></script>
 </body>
