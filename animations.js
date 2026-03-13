@@ -201,7 +201,7 @@ window.addEventListener('scroll', () => {
 const progressBar = document.getElementById('progress-bar');
 const stepBtns = document.querySelectorAll('.step-btn');
 
-const trackedIds = ['introduction', 'research', 'empathize', 'ideate', 'ia'];
+const trackedIds = ['empathize', 'define', 'ideate', 'prototype', 'test'];
 
 // ← Thêm 2 dòng này
 let isScrollingByClick = false;
@@ -235,7 +235,7 @@ window.addEventListener('scroll', () => {
   progressBar.style.width = (scrollTop / docHeight * 100) + '%';
 
   // Ẩn/hiện nav khi scroll đến section đầu tiên
-  const firstSection = document.getElementById('introduction');
+  const firstSection = document.getElementById('empathize');
   if (firstSection) {
     const firstTop = firstSection.getBoundingClientRect().top;
     if (firstTop <= 60) {

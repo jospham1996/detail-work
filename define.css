@@ -79,7 +79,7 @@
 .pa-card-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 24px;
-    letter-spacing: .06em;
+    /* letter-spacing: .06em; */
     color: var(--card-color);
     margin-bottom: 8px;
 }
